@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="49,689.834 ns"></ZoomStartTime>
+      <ZoomEndTime time="51,877.835 ns"></ZoomEndTime>
+      <Cursor1Time time="50,054.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="300"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/butn" type="logic">
+      <obj_property name="ElementShortName">butn</obj_property>
+      <obj_property name="ObjectShortName">butn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/led" type="logic">
+      <obj_property name="ElementShortName">led</obj_property>
+      <obj_property name="ObjectShortName">led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/btn" type="logic">
+      <obj_property name="ElementShortName">btn</obj_property>
+      <obj_property name="ObjectShortName">btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/btn_syn" type="logic">
+      <obj_property name="ElementShortName">btn_syn</obj_property>
+      <obj_property name="ObjectShortName">btn_syn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/btn_syn_10ms" type="logic">
+      <obj_property name="ElementShortName">btn_syn_10ms</obj_property>
+      <obj_property name="ObjectShortName">btn_syn_10ms</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/pulse" type="logic">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/led" type="array">
+      <obj_property name="ElementShortName">led[1:0]</obj_property>
+      <obj_property name="ObjectShortName">led[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/in_pulse" type="logic">
+      <obj_property name="ElementShortName">in_pulse</obj_property>
+      <obj_property name="ObjectShortName">in_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/led" type="array">
+      <obj_property name="ElementShortName">led[1:0]</obj_property>
+      <obj_property name="ObjectShortName">led[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/LED0" type="array">
+      <obj_property name="ElementShortName">LED0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">LED0[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/LED1" type="array">
+      <obj_property name="ElementShortName">LED1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">LED1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_module_sim_i/fsm_led_controller_i/LED12" type="array">
+      <obj_property name="ElementShortName">LED12[1:0]</obj_property>
+      <obj_property name="ObjectShortName">LED12[1:0]</obj_property>
+   </wvobject>
+</wave_config>

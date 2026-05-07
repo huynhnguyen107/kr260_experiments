@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sim_1/new/tb.v,1778171354,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/debounce.v,1778168484,verilog,,D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/fsm_led_controller.v,,debounce,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/fsm_led_controller.v,1778171713,verilog,,D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/rasing_edge.v,,fsm_led_controller,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/rasing_edge.v,1778099481,verilog,,D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/sync_2ff.v,,rasing_edge,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/sync_2ff.v,1778084964,verilog,,D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/top_module_sim.v,,sync_2ff,,,,,,,,
+D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/top_module_sim.v,1778170636,verilog,,D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sim_1/new/tb.v,,top_module_sim,,,,,,,,

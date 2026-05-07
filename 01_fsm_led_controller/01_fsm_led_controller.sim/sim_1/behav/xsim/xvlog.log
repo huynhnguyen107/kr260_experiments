@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/fsm_led_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_led_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/rasing_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rasing_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/sync_2ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_2ff
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sources_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../01_fsm_led_controller.srcs/sources_1/new/debounce.v" \
+"../../../../01_fsm_led_controller.srcs/sources_1/new/fsm_led_controller.v" \
+"../../../../01_fsm_led_controller.srcs/sources_1/new/rasing_edge.v" \
+"../../../../01_fsm_led_controller.srcs/sources_1/new/sync_2ff.v" \
+"../../../../01_fsm_led_controller.srcs/sources_1/new/top_module_sim.v" \
+"../../../../01_fsm_led_controller.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
