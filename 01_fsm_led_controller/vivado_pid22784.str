@@ -23612,3 +23612,2691 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints,
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, stream_source.xdc]", 5, false, false, false, false, false, true); // D - Double Click
 setText("PAResourceAtoD.AbstractFileView_READ_ONLY", "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc"); // d
 setText("PAResourceAtoD.AbstractFileView_READ_ONLY", "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc"); // d
+// Elapsed time: 705 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cz
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sun May 10 20:53:08 2026] Launched synth_1... Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/runme.log [Sun May 10 20:53:08 2026] Launched impl_1... Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1022634 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4368 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 147 MB. Current time: 5/10/26, 9:15:46 PM EDT
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10799846 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 148 MB. Current time: 5/11/26, 12:17:33 AM EDT
+// WARNING: HTimer (MainWindowUtils Timer) is taking 34522110ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  34522110 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 34522111 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 142 MB. Current time: 5/11/26, 9:53:06 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1414 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 531 ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 47474 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 15 ms. Decreasing delay to 2015 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 147 MB. Current time: 5/11/26, 10:23:07 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 146 MB. Current time: 5/11/26, 10:53:10 AM EDT
+// Elapsed time: 3602 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // g
+selectCodeEditor("stream_source.v", 393, 222); // ac
+// Elapsed time: 74 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN, "Close"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: HW_SERVER_UPDATE
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Open Server"); // bq
+selectButton("CANCEL", "Cancel"); // JButton
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// 'C' command handler elapsed time: 7 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN, "Close"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Confirm Close"); // u
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+// [GUI Memory]: 228 MB (+4271kb) [94:45:40]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // m
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("CANCEL", "Cancel"); // JButton
+// 'C' command handler elapsed time: 4 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_SERVER, "Refresh Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_SERVER
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: refresh_hw_server {localhost:3121} 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_SERVER, "Refresh Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_SERVER
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: refresh_hw_server {localhost:3121} 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("CANCEL", "Cancel"); // JButton
+// 'C' command handler elapsed time: 10 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("OptionPane.button", "Cancel"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN, "Close"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+selectCodeEditor("stream_source.xdc", 152, 59); // ac
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // g
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 243 MB (+3733kb) [94:46:53]
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // m
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_SERVER, "Refresh Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_SERVER
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: refresh_hw_server {localhost:3121} 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_SERVER, "Close Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_SERVER
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: HW_SERVER_UPDATE
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Open Server"); // bq
+selectButton(PAResourceTtoZ.TargetChooserPanel_ADD_XILINX_VIRTUAL_CABLE_AS_HARDWARE, "Add Xilinx Virtual Cable (XVC)"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Add Virtual Cable"); // a
+// Elapsed time: 16 seconds
+selectButton("CANCEL", "Cancel"); // JButton
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// 'C' command handler elapsed time: 26 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // m
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // m
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // m - Double Click
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_SERVER, "Refresh Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_SERVER
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: refresh_hw_server {localhost:3121} 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("CANCEL", "Cancel"); // JButton
+// 'C' command handler elapsed time: 4 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Close Project"); // u
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Close Project"); // u
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 218 MB. Current time: 5/11/26, 11:09:10 AM EDT
+// Tcl Message: close_project 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+dismissDialog("Close Project"); // bq
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.xpr", 0); // b.a
+// Opening Vivado Project: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.xpr. Version: Vivado v2022.2 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'. 
+// Project name: 02_valid_ready_fifo_pipeline; location: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline; part: xck26-sfvc784-2LV-c
+dismissDialog("Open Project"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // m
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Hardware Server Properties..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("CANCEL", "Cancel"); // JButton
+// 'C' command handler elapsed time: 3 seconds
+dismissDialog("Open New Hardware Target"); // ap
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // m
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // m - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_SERVER, "Close Server"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_SERVER
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: HW_SERVER_UPDATE
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Open Server"); // bq
+selectButton(PAResourceTtoZ.TargetChooserPanel_ADD_XILINX_VIRTUAL_CABLE_AS_HARDWARE, "Add Xilinx Virtual Cable (XVC)"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Add Virtual Cable"); // a
+selectButton("CANCEL", "Cancel"); // JButton
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// 'C' command handler elapsed time: 11 seconds
+dismissDialog("Open New Hardware Target"); // ap
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Open Target"); // bq
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Close Target"); // bq
+// Elapsed time: 25 seconds
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-19:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/XFL1NSVE1AKGA] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/XFL1NSVE1AKGA] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/XFL1NSVE1AKGA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// Tcl Message: current_hw_device [get_hw_devices xck26_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xck26_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xck26 (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Tcl Message: current_hw_device [get_hw_devices arm_dap_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0] 
+// Tcl Message: current_hw_device [get_hw_devices xck26_0] 
+selectButton("FINISH", "Finish"); // JButton
+// 'C' command handler elapsed time: 38 seconds
+dismissDialog("Open Hardware Target"); // bq
+dismissDialog("Open New Hardware Target"); // ap
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xck26_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1424 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xck26_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xck26 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xck26 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// 'D' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bq
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 161 MB. Current time: 5/11/26, 11:11:34 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:11:35 AM EDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBE, "VioProbeTablePanel_new"); // B
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1]", 0, true); // B - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 60 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBES, (String) null); // B
+// Elapsed time: 41 seconds
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, recv_count[7:0]]", 5, false); // B
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "recv_count[7:0] ; ==   ; [H]   ; XX ; probe7[7:0] ; ", 0, "recv_count[7:0]", 0); // g.c
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "recv_count[7:0] ; ==   ; [H]   ; XX ; probe7[7:0] ; ", 0, "recv_count[7:0]", 0, false, false, false, true, false); // g.c - Popup Trigger
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "recv_count[7:0] ; ==   ; [H]   ; XX ; probe7[7:0] ; ", 0, "XX", 3); // g.c
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "recv_count[7:0] ; ==   ; [H]   ; XX ; probe7[7:0] ; ", 0, "[H]  ", 2); // g.c
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, null, -1, null, -1); // g.c
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]  ", 0, "Radix", 2); // g.c
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq8'u0 [get_hw_probes recv_count -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "recv_count[7:0] ; ==   ; [U]   ; 0 ; probe7[7:0] ; 1 of 1", 0, "0", 3); // g.c
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, null, -1, null, -1); // g.c
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq8'u1 [get_hw_probes recv_count -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+setText(PAResourceTtoZ.TriggerCaptureControlPanel_NUMBER_OF_WINDOWS, "500"); // t
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: startgroup  
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.WINDOW_COUNT 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: endgroup 
+// Tcl Message: startgroup  
+// Tcl Message: set_property CONTROL.WINDOW_COUNT 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: endgroup 
+// Tcl Message: startgroup  
+// Tcl Message: set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: endgroup 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:14:12 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '500' windows, at 2026-May-11 11:14:12. 
+// Tcl Message: ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0. ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0). Resolution: 1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running. 2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints. 3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency. ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:14:14 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '500' windows, at 2026-May-11 11:14:20. 
+// Tcl Message: ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0. ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0). Resolution: 1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running. 2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints. 3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency. ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target  
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // S.b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 50, 126); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 50, 126, false, false, false, true, false); // b - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenuItem((HResource) null, "Full View"); // ao
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:14:32 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '500' windows, at 2026-May-11 11:14:49. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:14:52 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 12, 88); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -17, 50); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 218 MB. Current time: 5/11/26, 11:14:54 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -66, 42); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:14:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:14:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 166 MB. Current time: 5/11/26, 11:15:01 AM EDT
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // S.b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+setText(PAResourceTtoZ.TriggerCaptureControlPanel_NUMBER_OF_WINDOWS, "1"); // t
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.WINDOW_COUNT 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+selectComboBox(PAResourceTtoZ.TriggerCaptureControlPanel_WINDOW_DATA_DEPTH, "1024", 10); // d
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.DATA_DEPTH 1024 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+setText(PAResourceTtoZ.TriggerCaptureControlPanel_POSITION_OF_TRIGGER_MARKER_WITHIN, "500"); // t
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:21 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:23 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:27 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:15:27 
+// Tcl Message: ERROR: [Xicom 50-38] xicom: Multiple trigger marks in window: 0, buffer index: 1. ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0). Resolution: 1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running. 2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints. 3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency. ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3176] hw_server failed during internal command. Resolution: Check that the hw_server is running and the hardware connectivity to the target  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:30 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:31 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.  
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:32 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:15:33 AM EDT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:15:32 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:34 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:15:34 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:15:34 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:37 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:15:37 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:15:38 AM EDT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // S.b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 255, 157); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:15:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 1 ;  ; Output ; hw_vio_1", 0, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 0, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:15:59 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:16:03 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 167 MB. Current time: 5/11/26, 11:16:09 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:16:15 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:16:16 AM EDT
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // S.b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:16:18 AM EDT
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // S.b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:19 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 234, 120); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:21 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:22 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:38 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:41 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:43 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 24 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 571, 281); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 163 MB. Current time: 5/11/26, 11:16:45 AM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, recv_count[7:0]]", 5, true); // m - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, error_count[7:0]]", 6, true, true, false, false, false, false); // m - Shift Key - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, last_data[7:0]]", 4, true, true, false, false, false, false); // m - Shift Key - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:48 AM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, last_data[7:0]]", 4, true, false, false, false, true, false); // m - Popup Trigger - Node
+selectMenu("Name"); // al
+selectMenu("Waveform Style"); // al
+selectMenu("Signal Color"); // al
+selectMenu("Radix"); // al
+selectMenu("Radix"); // al
+selectMenuItem((HResource) null, "Unsigned Decimal"); // ac
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:53 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:54 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 316, 200); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:55 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:56 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:16:56 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:02 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 25, 254); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -40, 213); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:04 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:06 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:23 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 1 ;  ; Output ; hw_vio_1", 1, "[B] 1", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 1", 1, "Value", 1); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-May-11 11:17:31 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; [B] 0 ;  ; Output ; hw_vio_1", 1, "[B] 0", 1, false, false, false, false, true, false); // g - Popup Trigger
+selectMenuItem(PAResourceItoN.LabtoolsMenu_ACTIVE_HIGH_BUTTON, "Active-High Button"); // aw
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_VALUE_ACTIVE_HIGH_MODE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-May-11 11:17:37 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // o
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 47, 179); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:41 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:42 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 101, 154); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:43 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:44 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -12, 115); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:46 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:47 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:48 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:48 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:51 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 164 MB. Current time: 5/11/26, 11:17:52 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_sim (top_module_sim.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_sim (top_module_sim.v), stream_fifo_i : stream_fifo (stream_fifo.v)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("top_module_sim.v", 245, 155); // ac
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: INFO: [Vivado 12-12490] The selected simulation model for 'ila_0' IP changed to 'rtl' from '', the simulation run directory will be deleted. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_top_sim_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_sim_behav xil_defaultlib.tb_top_sim xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot tb_top_sim_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_top_sim_behav -key {Behavioral:sim_1:Functional:tb_top_sim} -tclbatch {tb_top_sim.tcl} -view {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:18:19 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg} 
+// Tcl Message: source tb_top_sim.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_sim_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 271, 206); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:18:22 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 704, 152); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:18:25 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 83 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Command: launch_simulation -step compile -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_top_sim_vlog.prj" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds 
+// Tcl Message: Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_sim_behav xil_defaultlib.tb_top_sim xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:19:53 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("Relaunch Simulation"); // b
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 31, 125); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 31, 125, false, false, false, true, false); // b - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenuItem((HResource) null, "Full View"); // ao
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -75, 71); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:19:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:20:00 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:20:03 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 223 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:23:41 AM EDT
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Command: launch_simulation -step compile -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_top_sim_vlog.prj" 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds 
+// Tcl Message: Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_sim_behav xil_defaultlib.tb_top_sim xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("Relaunch Simulation"); // b
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 148, 200); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:23:48 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 148, 200, false, false, false, true, false); // b - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectMenuItem((HResource) null, "Full View"); // ao
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -73, 61); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+unMinimizeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // R
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:23:52 AM EDT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // R
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:23:52 AM EDT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "top_module_sim_i ; top_module_sim ; Verilog Module", 1, "top_module_sim_i", 0, true); // c - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "stream_source_i ; stream_source ; Verilog Module", 2, "stream_source_i", 0, false); // c
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "d_start ; 0 ; Logic", 7, "d_start", 0, false); // c
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "rasing_start ; 0 ; Logic", 8, "rasing_start", 0, false); // c
+// Elapsed time: 48 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "d_start ; 0 ; Logic", 7, "d_start", 0, false, false, true, false, false, false); // c - Control Key
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "d_start ; 0 ; Logic", 7, "d_start", 0, false, false, false, false, true, false); // c - Popup Trigger
+selectMenuItem((HResource) null, "Add to Wave Window"); // ao
+// Tcl Command: 'current_wave_config {tb_top_sim_behav.wcfg}'
+// Tcl Message: current_wave_config {tb_top_sim_behav.wcfg} 
+// Tcl Message: tb_top_sim_behav.wcfg 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Tcl Message: add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/d_start}} {{/tb_top_sim/top_module_sim_i/stream_source_i/rasing_start}}  
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:25:01 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:25:01 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rasing_start]", 18, false); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, d_start]", 17, false, true, false, false, false, false); // m - Shift Key
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, d_start]", 17, false); // m
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:25:04 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:25:04 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Command: launch_simulation -step compile -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: "xvlog --incr --relax -prj tb_top_sim_vlog.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds 
+// Tcl Message: Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_top_sim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_sim_behav xil_defaultlib.tb_top_sim xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 173 MB. Current time: 5/11/26, 11:25:15 AM EDT
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// 'a' command handler elapsed time: 5 seconds
+dismissDialog("Relaunch Simulation"); // b
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 172 MB. Current time: 5/11/26, 11:25:17 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:18 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 52, 64); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 52, 64, false, false, false, true, false); // b - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenuItem((HResource) null, "Full View"); // ao
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -78, 98); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:21 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:22 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:23 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 22, 155); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 41, 156); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:26 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:30 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:32 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:32 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:37 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 175 MB. Current time: 5/11/26, 11:25:37 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/top_module.dcp to D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon May 11 11:25:55 2026] Launched synth_1... Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/runme.log [Mon May 11 11:25:55 2026] Launched impl_1... Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:33:45 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 496 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:34:12 AM EDT
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xck26_0 (3) ; Programmed", 2, "xck26_0 (3)", 0, true); // m - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xck26_0 (3) ; Programmed", 2, "xck26_0 (3)", 0, true, false, false, false, true, false); // m - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:34:19 AM EDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: program_hw_devices [get_hw_devices xck26_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:34:23 AM EDT
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xck26_0] 0] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-2302] Device xck26 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xck26 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:34:25 AM EDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// 'D' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bq
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 176 MB. Current time: 5/11/26, 11:34:26 AM EDT
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // o
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "[B] 0", 1, false); // g
+editTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "[B] 0", 0, "Value", 1); // g
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; [B] 0 ;  ; Output ; hw_vio_1", 0, "rst", 0, false, false, false, false, true, false); // g - Popup Trigger
+selectMenuItem(PAResourceItoN.LabtoolsMenu_TOGGLE_BUTTON, "Toggle Button"); // aw
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_VALUE_TOGGLE_MODE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 1 ;  ; Output ; hw_vio_1", 0, "1", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false, false, false, false, true, false); // g - Popup Trigger
+selectMenuItem(PAResourceItoN.LabtoolsMenu_ACTIVE_HIGH_BUTTON, "Active-High Button"); // aw
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_VALUE_ACTIVE_HIGH_MODE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// Elapsed time: 18 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "start ; 0 ;  ; Output ; hw_vio_1", 1, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "rst ; 0 ;  ; Output ; hw_vio_1", 0, "0", 1, false); // g
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]] 
+// Tcl Message: endgroup 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN, "Close"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_HARDWARE_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // u
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: close_hw_manager 
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // d
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // d
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog("Close Hardware Manager"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 160 MB. Current time: 5/11/26, 11:36:30 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM

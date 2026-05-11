@@ -43,9 +43,10 @@ module tb_top_sim(
 	//create others
 	initial begin
 		wait (!rst)
-		@(posedge clk) begin
-			start <=1;
-		end
+		for (i=0; i<15; i=i+1)
+			@(posedge clk) begin
+				start <=1;
+			end
 		for (i=0; i<15; i=i+1)
 			@(posedge clk) begin
 				start <=0;

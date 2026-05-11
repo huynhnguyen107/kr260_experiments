@@ -482,3 +482,334 @@ file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeli
 close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc} w ]
 add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc}}
 update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+refresh_hw_server {localhost:3121}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+refresh_hw_server {localhost:3121}
+close_sim
+close_project
+open_project {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.xpr}
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/XFL1NSVE1AKGA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/XFL1NSVE1AKGA]
+open_hw_target
+set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0]
+set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+current_hw_device [get_hw_devices xck26_0]
+refresh_hw_device [lindex [get_hw_devices xck26_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xck26_0]
+set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0]
+program_hw_devices [get_hw_devices xck26_0]
+refresh_hw_device [lindex [get_hw_devices xck26_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'u0 [get_hw_probes recv_count -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'u1 [get_hw_probes recv_count -of_objects [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+startgroup 
+set_property CONTROL.WINDOW_COUNT 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+endgroup
+startgroup 
+set_property CONTROL.WINDOW_COUNT 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+endgroup
+startgroup 
+set_property CONTROL.DATA_DEPTH 2 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property CONTROL.WINDOW_COUNT 1 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.DATA_DEPTH 1024 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property CONTROL.TRIGGER_POSITION 500 [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"ila_0"}]]
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+source tb_top_sim.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/d_start}} {{/tb_top_sim/top_module_sim_i/stream_source_i/rasing_start}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+set_property FULL_PROBES.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.ltx} [get_hw_devices xck26_0]
+set_property PROGRAM.FILE {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/impl_1/top_module.bit} [get_hw_devices xck26_0]
+program_hw_devices [get_hw_devices xck26_0]
+refresh_hw_device [lindex [get_hw_devices xck26_0] 0]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes start -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {start} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
+endgroup
+close_hw_manager

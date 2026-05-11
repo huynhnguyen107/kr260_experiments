@@ -141,8 +141,8 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/top_module.dcp}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc}}
 OPTRACE "read constraints: implementation" END { }

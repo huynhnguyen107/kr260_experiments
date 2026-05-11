@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun May 10 20:53:11 2026
-# Process ID: 31792
+# Start of session at: Mon May 11 11:25:58 2026
+# Process ID: 41628
 # Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1
 # Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
 # Log file: D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/top_module.vds
@@ -11,14 +11,19 @@
 # Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/utils_1/imports/synth_1/top_module.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_module -part xck26-sfvc784-2LV-c
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 33000
+INFO: [Synth 8-7075] Helper process launched with PID 20700
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2188]
 INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2235]
@@ -131,7 +136,7 @@ WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode 
 WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4588]
 WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:5486]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1797.734 ; gain = 344.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1798.961 ; gain = 345.629
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module.v:23]
 INFO: [Synth 8-6157] synthesizing module 'stream_source' [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_source.v:23]
@@ -154,8 +159,8 @@ INFO: [Synth 8-6157] synthesizing module 'stream_sink' [D:/FPGA/Vivaldo Project/
 	Parameter WIDTH bound to: 8 - type: integer 
 	Parameter NUM_WORDS bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'stream_sink' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_sink.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vio_0' [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/.Xil/Vivado-31792-LAPTOP-CHCSI1R5/realtime/vio_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/.Xil/Vivado-31792-LAPTOP-CHCSI1R5/realtime/vio_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/.Xil/Vivado-41628-LAPTOP-CHCSI1R5/realtime/vio_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/.Xil/Vivado-41628-LAPTOP-CHCSI1R5/realtime/vio_0_stub.v:5]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module.v:78]
 INFO: [Synth 8-6157] synthesizing module 'ila_0' [d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [D:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
@@ -290,18 +295,18 @@ WARNING: [Synth 8-7129] Port DINB[33] in module blk_mem_gen_v8_4_5_blk_mem_gen_p
 WARNING: [Synth 8-7129] Port DINB[32] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 2292.852 ; gain = 839.855
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2293.914 ; gain = 840.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2292.852 ; gain = 839.855
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2293.914 ; gain = 840.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2292.852 ; gain = 839.855
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2293.914 ; gain = 840.582
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 2292.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2293.914 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -322,15 +327,17 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2344.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2364.266 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 96 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
   CFGLUT5 => SRLC32E: 16 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.177 . Memory (MB): peak = 2344.238 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.136 . Memory (MB): peak = 2364.266 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 2344.238 ; gain = 891.242
+Finished Constraint Validation : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 2364.266 ; gain = 910.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -338,7 +345,7 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 2344.238 ; gain = 891.242
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 2364.266 ; gain = 910.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -347,7 +354,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for ila_0/inst. (constraint file  {D:
 Applied set_property KEEP_HIERARCHY = SOFT for ila_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vio_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 2344.238 ; gain = 891.242
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 2364.266 ; gain = 910.934
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
@@ -519,7 +526,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 2344.238 ; gain = 891.242
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2364.266 ; gain = 910.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -543,25 +550,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-6904] The RAM "stream_fifo_i/sync_fifo_i/mem_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 INFO: [Synth 8-6904] The RAM "stream_fifo_i/sync_fifo_i/mem_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 2344.238 ; gain = 891.242
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:35 . Memory (MB): peak = 2364.266 ; gain = 910.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:10 . Memory (MB): peak = 2523.555 ; gain = 1070.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 2527.582 ; gain = 1074.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:10 . Memory (MB): peak = 2536.723 ; gain = 1083.727
+Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:57 . Memory (MB): peak = 2540.617 ; gain = 1087.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:13 . Memory (MB): peak = 2557.770 ; gain = 1104.773
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:59 . Memory (MB): peak = 2560.875 ; gain = 1107.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -619,37 +626,37 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -672,9 +679,9 @@ Report Cell Usage:
 |4     |CARRY8   |     4|
 |5     |CFGLUT5  |    96|
 |6     |LUT1     |    49|
-|7     |LUT2     |    86|
-|8     |LUT3     |   129|
-|9     |LUT4     |   187|
+|7     |LUT2     |    85|
+|8     |LUT3     |   127|
+|9     |LUT4     |   188|
 |10    |LUT5     |   140|
 |11    |LUT6     |   639|
 |12    |MUXF7    |     3|
@@ -684,25 +691,25 @@ Report Cell Usage:
 |16    |SRL16E   |    44|
 |17    |SRLC16E  |     2|
 |18    |SRLC32E  |    17|
-|19    |FDRE     |  1828|
+|19    |FDRE     |  1829|
 |20    |FDSE     |    11|
 |21    |IBUF     |     1|
 |22    |OBUF     |     2|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3200 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:02:08 . Memory (MB): peak = 2565.973 ; gain = 1061.590
-Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 2565.973 ; gain = 1112.977
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:54 . Memory (MB): peak = 2569.973 ; gain = 1046.289
+Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:02:06 . Memory (MB): peak = 2569.973 ; gain = 1116.641
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2573.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2578.039 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: ila_0 UUID: d7f66bbc-6204-5aea-8c9b-20b797086963 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2600.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2606.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 119 instances were transformed.
   (CARRY4) => CARRY8: 20 instances
@@ -712,12 +719,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 1 instance 
 
-Synth Design complete, checksum: e036f6b8
+Synth Design complete, checksum: e010c383
 INFO: [Common 17-83] Releasing license: Synthesis
-189 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+195 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.statsThreshold, tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.runs/synth_1/top_module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 10 20:56:02 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 11:28:55 2026...

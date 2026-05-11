@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Sun May 10 20:56:02 2026
+| Date         : Mon May 11 11:28:55 2026
 | Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
 | Design       : top_module
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 1245 |     0 |          0 |    117120 |  1.06 |
-|   LUT as Logic             | 1078 |     0 |          0 |    117120 |  0.92 |
+| CLB LUTs*                  | 1244 |     0 |          0 |    117120 |  1.06 |
+|   LUT as Logic             | 1077 |     0 |          0 |    117120 |  0.92 |
 |   LUT as Memory            |  167 |     0 |          0 |     57600 |  0.29 |
 |     LUT as Distributed RAM |    8 |     0 |            |           |       |
 |     LUT as Shift Register  |  159 |     0 |            |           |       |
-| CLB Registers              | 1839 |     0 |          0 |    234240 |  0.79 |
-|   Register as Flip Flop    | 1839 |     0 |          0 |    234240 |  0.79 |
+| CLB Registers              | 1840 |     0 |          0 |    234240 |  0.79 |
+|   Register as Flip Flop    | 1840 |     0 |          0 |    234240 |  0.79 |
 |   Register as Latch        |    0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |   24 |     0 |          0 |     14640 |  0.16 |
 | F7 Muxes                   |    3 |     0 |          0 |     58560 | <0.01 |
@@ -64,7 +64,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 11    |          Yes |         Set |            - |
-| 1828  |          Yes |       Reset |            - |
+| 1829  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -161,14 +161,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 1828 |            Register |
+| FDRE     | 1829 |            Register |
 | LUT6     |  639 |                 CLB |
-| LUT4     |  187 |                 CLB |
+| LUT4     |  188 |                 CLB |
 | LUT5     |  140 |                 CLB |
-| LUT3     |  129 |                 CLB |
+| LUT3     |  127 |                 CLB |
 | SRL16E   |  124 |                 CLB |
 | SRLC32E  |  113 |                 CLB |
-| LUT2     |   86 |                 CLB |
+| LUT2     |   85 |                 CLB |
 | LUT1     |   49 |                 CLB |
 | CARRY8   |   24 |                 CLB |
 | RAMD32   |   14 |                 CLB |

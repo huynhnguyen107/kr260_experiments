@@ -30,13 +30,17 @@ module stream_source #(parameter DATA_WIDTH=8, NUM_WORDS=16) (
 	output reg done
     );
 	// signal defination
+	reg d_start;
+	wire rasing_start;
 	reg [$clog2(NUM_WORDS)-1:0] count;
 	wire continuing;
 	// continue transfer
+	assign rasing_start = !d_start & start ;
 	assign continuing = m_valid & m_ready ;
 	// process
 	always @(posedge clk) begin
 		if (rst) begin
+			d_start <=0 ;
 			m_valid <=0 ;
 			m_data <=0 ;
 			count <=0 ;
@@ -44,7 +48,8 @@ module stream_source #(parameter DATA_WIDTH=8, NUM_WORDS=16) (
 		end
 		else begin
 			//control m_valid
-			if (start)
+			d_start <= start;
+			if (rasing_start)
 				m_valid <= 1;
 			else if (continuing) begin
 					if (count==NUM_WORDS-1) begin
