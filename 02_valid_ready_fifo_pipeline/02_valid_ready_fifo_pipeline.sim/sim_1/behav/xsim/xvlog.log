@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/processing_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_sink.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_sink
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/sync_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_top_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_sim

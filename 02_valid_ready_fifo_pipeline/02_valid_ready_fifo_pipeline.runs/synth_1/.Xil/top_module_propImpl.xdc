@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc} rfile:../../../02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C3 [get_ports clk]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F8 [get_ports led[0]]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E8 [get_ports led[1]]

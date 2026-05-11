@@ -219,3 +219,266 @@ endgroup
 save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/tb_behav.wcfg}
 close_sim
 save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/01_fsm_led_controller/01_fsm_led_controller.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_project
+create_project 02_valid_ready_fifo_pipeline {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline} -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_source.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_source.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb/stream_source_i/done}} {{/tb/stream_source_i/count}} {{/tb/stream_source_i/continuing}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/sync_fifo.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/sync_fifo.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_sync_fifo.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_sync_fifo.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_module [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_sync_fifo [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+source tb_sync_fifo.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_sync_fifo/sync_fifo_i/wr_ptr}} {{/tb_sync_fifo/sync_fifo_i/rd_ptr}} {{/tb_sync_fifo/sync_fifo_i/count}} {{/tb_sync_fifo/sync_fifo_i/mem}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_fifo.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_fifo.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/processing_core.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/processing_core.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_sink.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_sink.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module_sim.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module_sim.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_top_sim.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_top_sim.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_top_sim.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_source_i/done}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_source_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_source_i/start}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_source_i/done}} {{/tb_top_sim/top_module_sim_i/stream_source_i/count}} {{/tb_top_sim/top_module_sim_i/stream_source_i/continuing}} {{/tb_top_sim/top_module_sim_i/stream_source_i/DATA_WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_source_i/NUM_WORDS}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_fifo_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/wr_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rd_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/full}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/empty}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/DEPTH}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/processing_core_i/clk}} {{/tb_top_sim/top_module_sim_i/processing_core_i/rst}} {{/tb_top_sim/top_module_sim_i/processing_core_i/s_valid}} {{/tb_top_sim/top_module_sim_i/processing_core_i/s_data}} {{/tb_top_sim/top_module_sim_i/processing_core_i/s_ready}} {{/tb_top_sim/top_module_sim_i/processing_core_i/m_valid}} {{/tb_top_sim/top_module_sim_i/processing_core_i/m_data}} {{/tb_top_sim/top_module_sim_i/processing_core_i/m_ready}} {{/tb_top_sim/top_module_sim_i/processing_core_i/WIDTH}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_sink_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_valid}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_ready}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/last_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/recv_count}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/error_count}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/done}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/expected_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/NUM_WORDS}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_ready}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/clk}} {{/tb_top_sim/top_module_sim_i/rst}} {{/tb_top_sim/top_module_sim_i/start}} {{/tb_top_sim/top_module_sim_i/led}} {{/tb_top_sim/top_module_sim_i/src_valid}} {{/tb_top_sim/top_module_sim_i/src_data}} {{/tb_top_sim/top_module_sim_i/src_ready}} {{/tb_top_sim/top_module_sim_i/done}} {{/tb_top_sim/top_module_sim_i/fifo_valid}} {{/tb_top_sim/top_module_sim_i/fifo_data}} {{/tb_top_sim/top_module_sim_i/fifo_ready}} {{/tb_top_sim/top_module_sim_i/core_valid}} {{/tb_top_sim/top_module_sim_i/core_data}} {{/tb_top_sim/top_module_sim_i/core_ready}} {{/tb_top_sim/top_module_sim_i/last_data}} {{/tb_top_sim/top_module_sim_i/recv_count}} {{/tb_top_sim/top_module_sim_i/error_count}} {{/tb_top_sim/top_module_sim_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/NUM_WORDS}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/full}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/empty}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_ptr}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_ptr}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/count}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/mem}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/DEPTH}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}} [get_filesets sim_1]
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_fifo_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/wr_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rd_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/full}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/empty}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/DEPTH}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/clk}} {{/tb_top_sim/top_module_sim_i/rst}} {{/tb_top_sim/top_module_sim_i/start}} {{/tb_top_sim/top_module_sim_i/led}} {{/tb_top_sim/top_module_sim_i/src_valid}} {{/tb_top_sim/top_module_sim_i/src_data}} {{/tb_top_sim/top_module_sim_i/src_ready}} {{/tb_top_sim/top_module_sim_i/done}} {{/tb_top_sim/top_module_sim_i/fifo_valid}} {{/tb_top_sim/top_module_sim_i/fifo_data}} {{/tb_top_sim/top_module_sim_i/fifo_ready}} {{/tb_top_sim/top_module_sim_i/core_valid}} {{/tb_top_sim/top_module_sim_i/core_data}} {{/tb_top_sim/top_module_sim_i/core_ready}} {{/tb_top_sim/top_module_sim_i/last_data}} {{/tb_top_sim/top_module_sim_i/recv_count}} {{/tb_top_sim/top_module_sim_i/error_count}} {{/tb_top_sim/top_module_sim_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/NUM_WORDS}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_source_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_source_i/start}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_source_i/done}} {{/tb_top_sim/top_module_sim_i/stream_source_i/count}} {{/tb_top_sim/top_module_sim_i/stream_source_i/continuing}} {{/tb_top_sim/top_module_sim_i/stream_source_i/DATA_WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_source_i/NUM_WORDS}} 
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+source tb_top_sim.tcl
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_1/done}} 
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/done1}} 
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_1/clk}} {{/tb_top_sim/top_module_sim_i/stream_source_1/rst}} {{/tb_top_sim/top_module_sim_i/stream_source_1/start}} {{/tb_top_sim/top_module_sim_i/stream_source_1/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_source_1/m_data}} {{/tb_top_sim/top_module_sim_i/stream_source_1/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_source_1/done}} {{/tb_top_sim/top_module_sim_i/stream_source_1/count}} {{/tb_top_sim/top_module_sim_i/stream_source_1/continuing}} {{/tb_top_sim/top_module_sim_i/stream_source_1/DATA_WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_source_1/NUM_WORDS}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/clk}} {{/tb_top_sim/top_module_sim_i/rst}} {{/tb_top_sim/top_module_sim_i/start}} {{/tb_top_sim/top_module_sim_i/led}} {{/tb_top_sim/top_module_sim_i/src_valid}} {{/tb_top_sim/top_module_sim_i/src_data}} {{/tb_top_sim/top_module_sim_i/src_ready}} {{/tb_top_sim/top_module_sim_i/done}} {{/tb_top_sim/top_module_sim_i/fifo_valid}} {{/tb_top_sim/top_module_sim_i/fifo_data}} {{/tb_top_sim/top_module_sim_i/fifo_ready}} {{/tb_top_sim/top_module_sim_i/core_valid}} {{/tb_top_sim/top_module_sim_i/core_data}} {{/tb_top_sim/top_module_sim_i/core_ready}} {{/tb_top_sim/top_module_sim_i/last_data}} {{/tb_top_sim/top_module_sim_i/recv_count}} {{/tb_top_sim/top_module_sim_i/error_count}} {{/tb_top_sim/top_module_sim_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/NUM_WORDS}} 
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_source_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_source_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_source_i/start}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_source_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_source_i/done}} {{/tb_top_sim/top_module_sim_i/stream_source_i/count}} {{/tb_top_sim/top_module_sim_i/stream_source_i/continuing}} {{/tb_top_sim/top_module_sim_i/stream_source_i/DATA_WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_source_i/NUM_WORDS}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_fifo_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/s_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_valid}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/m_ready}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/wr_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/rd_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/full}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/empty}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/DEPTH}} 
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_en}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_data}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/full}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/empty}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/wr_ptr}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/rd_ptr}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/count}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/mem}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_fifo_i/sync_fifo_i/DEPTH}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/stream_sink_i/clk}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/rst}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_valid}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/s_ready}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/last_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/recv_count}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/error_count}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/done}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/expected_data}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/WIDTH}} {{/tb_top_sim/top_module_sim_i/stream_sink_i/NUM_WORDS}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+source tb_top_sim.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_top_sim_behav.wcfg}
+add_wave {{/tb_top_sim/top_module_sim_i/sink_done}} 
+save_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/tb_top_sim_behav.wcfg}
+source tb_top_sim.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_IN {0} \
+  CONFIG.C_NUM_PROBE_OUT {2} \
+] [get_ips vio_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+catch { config_ip_cache -export [get_ips -all vio_0] }
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+launch_runs vio_0_synth_1 -jobs 8
+wait_on_run vio_0_synth_1
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {12} \
+  CONFIG.C_PROBE3_WIDTH {8} \
+  CONFIG.C_PROBE6_WIDTH {8} \
+  CONFIG.C_PROBE7_WIDTH {8} \
+  CONFIG.C_PROBE8_WIDTH {8} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc} w ]
+add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/02_valid_ready_fifo_pipeline/02_valid_ready_fifo_pipeline.srcs/constrs_1/new/stream_source.xdc}}
+update_compile_order -fileset sources_1

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/processing_core.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_fifo.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_sink.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/stream_source.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/sync_fifo.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sources_1/new/top_module_sim.v" \
+"../../../../02_valid_ready_fifo_pipeline.srcs/sim_1/new/tb_top_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
