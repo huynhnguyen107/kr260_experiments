@@ -813,3 +813,26 @@ set_property OUTPUT_VALUE 0 [get_hw_probes rst -of_objects [get_hw_vios -of_obje
 commit_hw_vio [get_hw_probes {rst} -of_objects [get_hw_vios -of_objects [get_hw_devices xck26_0] -filter {CELL_NAME=~"vio_0"}]]
 endgroup
 close_hw_manager
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_sim
+close_project
+create_project 03_axi_lite_gpio_led {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led} -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v}}
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc} w ]
+add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc}}
+update_compile_order -fileset sources_1
+create_bd_design "axi_gpio_led"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0
+endgroup

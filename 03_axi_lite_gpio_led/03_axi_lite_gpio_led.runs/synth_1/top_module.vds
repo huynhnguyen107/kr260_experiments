@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon May 11 15:09:39 2026
+# Process ID: 19196
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/top_module.vds
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 377.402 ; gain = 52.609
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/utils_1/imports/synth_1/axi_gpio_led_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/utils_1/imports/synth_1/axi_gpio_led_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32344
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1781.020 ; gain = 332.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:12]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_axi_gpio_0_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_axi_gpio_0_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_ps8_0_axi_periph_0' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:238]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1F6OWTC' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:885]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1F6OWTC' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:885]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_19TFPIR' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:1017]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_auto_ds_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_auto_ds_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_auto_pc_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_auto_pc_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_19TFPIR' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:1017]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1DECV8Z' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:1427]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1DECV8Z' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:1427]
+WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arid' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awid' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 's01_couplers_imp_1DECV8Z' is unconnected for instance 's01_couplers' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+WARNING: [Synth 8-7023] instance 's01_couplers' of module 's01_couplers_imp_1DECV8Z' has 78 connections declared, but only 63 given [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:780]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_xbar_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_xbar_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'axi_gpio_led_xbar_0' is unconnected for instance 'xbar' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:844]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'axi_gpio_led_xbar_0' is unconnected for instance 'xbar' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:844]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'axi_gpio_led_xbar_0' has 40 connections declared, but only 38 given [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:844]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_ps8_0_axi_periph_0' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:238]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'axi_gpio_led_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+WARNING: [Synth 8-7023] instance 'ps8_0_axi_periph' of module 'axi_gpio_led_ps8_0_axi_periph_0' has 99 connections declared, but only 88 given [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:98]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_rst_ps8_0_99M_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_rst_ps8_0_99M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_rst_ps8_0_99M_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_rst_ps8_0_99M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'axi_gpio_led_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:187]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'axi_gpio_led_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:187]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'axi_gpio_led_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:187]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'axi_gpio_led_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:187]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'axi_gpio_led_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:187]
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_zynq_ultra_ps_e_0_0' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_zynq_ultra_ps_e_0_0' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/.Xil/Vivado-19196-LAPTOP-CHCSI1R5/realtime/axi_gpio_led_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'axi_gpio_led_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:194]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'axi_gpio_led_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:194]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'axi_gpio_led_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:194]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'axi_gpio_led_zynq_ultra_ps_e_0_0' has 44 connections declared, but only 41 given [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/synth/axi_gpio_led.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v:23]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1DECV8Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1DECV8Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s01_couplers_imp_1DECV8Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s01_couplers_imp_1DECV8Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_19TFPIR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_19TFPIR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1F6OWTC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1F6OWTC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1F6OWTC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1F6OWTC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1876.945 ; gain = 428.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1876.945 ; gain = 428.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1876.945 ; gain = 428.070
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1876.945 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_zynq_ultra_ps_e_0_0/axi_gpio_led_zynq_ultra_ps_e_0_0/axi_gpio_led_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'axi_gpio_led_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_zynq_ultra_ps_e_0_0/axi_gpio_led_zynq_ultra_ps_e_0_0/axi_gpio_led_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'axi_gpio_led_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_axi_gpio_0_0/axi_gpio_led_axi_gpio_0_0/axi_gpio_led_axi_gpio_0_0_in_context.xdc] for cell 'axi_gpio_led_i/axi_gpio_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_axi_gpio_0_0/axi_gpio_led_axi_gpio_0_0/axi_gpio_led_axi_gpio_0_0_in_context.xdc] for cell 'axi_gpio_led_i/axi_gpio_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_xbar_0/axi_gpio_led_xbar_0/axi_gpio_led_xbar_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_xbar_0/axi_gpio_led_xbar_0/axi_gpio_led_xbar_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_auto_ds_0/axi_gpio_led_auto_ds_0/axi_gpio_led_auto_ds_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_auto_ds_0/axi_gpio_led_auto_ds_0/axi_gpio_led_auto_ds_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_auto_pc_0/axi_gpio_led_auto_pc_0/axi_gpio_led_auto_pc_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_auto_pc_0/axi_gpio_led_auto_pc_0/axi_gpio_led_auto_pc_0_in_context.xdc] for cell 'axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_rst_ps8_0_99M_0/axi_gpio_led_rst_ps8_0_99M_0/axi_gpio_led_rst_ps8_0_99M_0_in_context.xdc] for cell 'axi_gpio_led_i/rst_ps8_0_99M'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_rst_ps8_0_99M_0/axi_gpio_led_rst_ps8_0_99M_0/axi_gpio_led_rst_ps8_0_99M_0_in_context.xdc] for cell 'axi_gpio_led_i/rst_ps8_0_99M'
+Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1876.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1876.945 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.492 ; gain = 429.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_gpio_led_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/utils_1/imports/synth_1/axi_gpio_led_wrapper.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arburst in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arcache in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arid in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arlen in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arlock in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arqos in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arsize in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awburst in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awcache in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awid in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awlen in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awlock in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awqos in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_awsize in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_wlast in module axi_gpio_led_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1878.531 ; gain = 429.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2438.359 ; gain = 989.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2438.582 ; gain = 989.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2457.680 ; gain = 1008.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |axi_gpio_led_xbar_0              |         1|
+|2     |axi_gpio_led_auto_ds_0           |         1|
+|3     |axi_gpio_led_auto_pc_0           |         1|
+|4     |axi_gpio_led_axi_gpio_0_0        |         1|
+|5     |axi_gpio_led_rst_ps8_0_99M_0     |         1|
+|6     |axi_gpio_led_zynq_ultra_ps_e_0_0 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |axi_gpio_led_auto_ds           |     1|
+|2     |axi_gpio_led_auto_pc           |     1|
+|3     |axi_gpio_led_axi_gpio_0        |     1|
+|4     |axi_gpio_led_rst_ps8_0_99M     |     1|
+|5     |axi_gpio_led_xbar              |     1|
+|6     |axi_gpio_led_zynq_ultra_ps_e_0 |     1|
+|7     |OBUF                           |     2|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2463.457 ; gain = 1014.582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2475.527 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2509.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e7baa309
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 78 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2509.219 ; gain = 2050.930
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 15:10:35 2026...

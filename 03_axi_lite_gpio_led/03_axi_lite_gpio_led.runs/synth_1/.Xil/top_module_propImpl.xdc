@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:{D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc} rfile:../../../03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F8 [get_ports {led[0]}]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E8 [get_ports {led[1]}]

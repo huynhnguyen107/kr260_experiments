@@ -26300,3 +26300,252 @@ closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // d
 dismissDialog("Close Hardware Manager"); // bq
 // HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 160 MB. Current time: 5/11/26, 11:36:30 AM EDT
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 1324 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // f
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // f
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // f
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 21, false); // f
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,688 MB. GUI used memory: 159 MB. Current time: 5/11/26, 11:59:10 AM EDT
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 265 MB (+9674kb) [95:38:21]
+// Xgd.load filename: D:/Xilinx/Vivado/2022.2/data/parts/xilinx/zynquplus/devint/zynquplus/xck26/xck26.xgd; ZipEntry: xck26_detail.xgd elapsed time: 1.4s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.6s
+// [GUI Memory]: 286 MB (+8746kb) [95:38:21]
+// [Engine Memory]: 2,790 MB (+67353kb) [95:38:21]
+// [Engine Memory]: 2,930 MB (+986kb) [95:38:22]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1926 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 4764.980 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.414 . Memory (MB): peak = 5208.875 ; gain = 22.328 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.426 . Memory (MB): peak = 5208.875 ; gain = 22.328 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 5662.848 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 88 instances were transformed.   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances   IBUF => IBUF (IBUFCTRL, INBUF): 1 instance    RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 2.5s
+// [GUI Memory]: 302 MB (+829kb) [95:38:23]
+// Device view-level: 0.1
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 317 MB (+261kb) [95:38:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  1703 ms.
+// [Engine Memory]: 3,159 MB (+86039kb) [95:38:25]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,214 MB. GUI used memory: 261 MB. Current time: 5/11/26, 11:59:17 AM EDT
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 3,452 MB (+141581kb) [95:38:26]
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // ag
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs 
+// [Engine Memory]: 3,932 MB (+322037kb) [95:38:35]
+// RouteApi::initDelayMediator elapsed time: 17.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 4,139 MB. GUI used memory: 276 MB. Current time: 5/11/26, 11:59:34 AM EDT
+// Elapsed time: 13 seconds
+dismissDialog("Report Timing Summary"); // bq
+// [Engine Memory]: 4,139 MB (+10951kb) [95:38:44]
+// Elapsed time: 30 seconds
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 6); // a
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 9); // a
+// Elapsed time: 501 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Methodology Summary]", 4, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+// [GUI Memory]: 334 MB (+1566kb) [95:51:37]
+// Elapsed time: 471 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5, true); // a - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 4,139 MB. GUI used memory: 275 MB. Current time: 5/11/26, 12:29:37 PM EDT
+// Elapsed time: 1756 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Close Project"); // u
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bq
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,139 MB. GUI used memory: 233 MB. Current time: 5/11/26, 12:45:45 PM EDT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 4,139 MB. GUI used memory: 239 MB. Current time: 5/11/26, 12:45:46 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1064 ms.
+// Tcl Message: close_project 
+// TclEventType: DESIGN_CLOSE
+// 'b' command handler elapsed time: 4 seconds
+dismissDialog("Close Project"); // bq
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+dismissFileChooser();
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // u
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+selectButton("BACK", "< Back"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "03_axi_lite_gpio_led"); // Q
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "top_module"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "03_axi_lite_gpio_led"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Constraints File"); // u
+selectButton("NEXT", "Next >"); // JButton
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Kria KR260 Robotics Starter Kit SOM ; Kria KR260 Robotics Starter Kit SOM ; Kria KR260 Robotics Starter Kit SOM ; xilinx.com ; 1.1 ; xck26-sfvc784-2LV-c ; 784 ; Rev_B01 ; 189 ; 117120 ; 234240 ; 144 ; 64 ; 1248 ;  ; 6304 ;  ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ; 4 ;  ; 0 ;  ;  ; 0 ;  ;  ; 0 ; 85 ; 85 ; C ; 0.698 ; 0.720 ; 0.742", 2, "Kria KR260 Robotics Starter Kit SOM", 0, false); // I
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Kria KV260 Vision AI Starter Kit SOM ; Kria KV260 Vision AI Starter Kit SOM ; Kria KV260 Vision AI Starter Kit SOM ; xilinx.com ; 1.4 ; xck26-sfvc784-2LV-c ; 784 ; Rev_B01 ; 189 ; 117120 ; 234240 ; 144 ; 64 ; 1248 ;  ; 6304 ;  ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ; 4 ;  ; 0 ;  ;  ; 0 ;  ;  ; 0 ; 85 ; 85 ; C ; 0.698 ; 0.720 ; 0.742", 3, "Kria KV260 Vision AI Starter Kit SOM", 0, false); // I
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Kria KR260 Robotics Starter Kit SOM ; Kria KR260 Robotics Starter Kit SOM ; Kria KR260 Robotics Starter Kit SOM ; xilinx.com ; 1.1 ; xck26-sfvc784-2LV-c ; 784 ; Rev_B01 ; 189 ; 117120 ; 234240 ; 144 ; 64 ; 1248 ;  ; 6304 ;  ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ; 4 ;  ; 0 ;  ;  ; 0 ;  ;  ; 0 ; 85 ; 85 ; C ; 0.698 ; 0.720 ; 0.742", 2, "Kria KR260 Robotics Starter Kit SOM", 0, false); // I
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project 03_axi_lite_gpio_led {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led} -part xck26-sfvc784-2LV-c 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new'
+// Tcl Message: set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project] 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new'
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new'
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new 
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new 
+// Tcl Message: file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new} 
+// Tcl Message: close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new'
+// Tcl Message: add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/top_module.v}} 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new'
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new 
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new 
+// Tcl Message: file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new} 
+// Tcl Message: close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/constrs_1/new/03_axi_lite_gpio_led.xdc}} 
+dismissDialog("New Project"); // f
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 74 seconds
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "03_axi_lite_gpio_led", true); // Q
+// HOptionPane Error: 'The name '03_axi_lite_gpio_led' is illegal, it must begin with a letter of the alphabet. (Vivado)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "0_axi_lite_gpio_led"); // Q
+typeControlKey(null, null, 'z');
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "05_axi_lite_gpio_led"); // Q
+typeControlKey(null, null, 'z');
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, (String) null); // Q
+typeControlKey(null, null, 'z');
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "design_1"); // Q
+typeControlKey(null, null, 'z');
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "design_1"); // Q
+// Elapsed time: 23 seconds
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "axi_gpio_led"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'O' command handler elapsed time: 35 seconds
+dismissDialog("Create Block Design"); // au
+// Tcl Message: create_bd_design "axi_gpio_led" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\03_axi_lite_gpio_led\03_axi_lite_gpio_led.srcs\sources_1\bd\axi_gpio_led\axi_gpio_led.bd>  
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Create Block Design"); // bq
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 291 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zyn"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0, "Zynq UltraScale+ MPSoC", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0, "Zynq UltraScale+ MPSoC", 0, false, false, false, false, false, true); // z - Double Click
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bq
+// JavaFX intialization before: 1778518402888
+// JavaFX initialization after: 1778518404307
