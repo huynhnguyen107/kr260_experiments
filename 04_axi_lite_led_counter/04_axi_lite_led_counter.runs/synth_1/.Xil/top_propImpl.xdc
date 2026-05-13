@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:{D:/FPGA/Vivaldo Project/kr260_experiments/04_axi_lite_led_counter/04_axi_lite_led_counter.srcs/constrs_1/new/axi_lite_led_counter.xdc} rfile:../../../04_axi_lite_led_counter.srcs/constrs_1/new/axi_lite_led_counter.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F8 [get_ports {led[0]}]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E8 [get_ports {led[1]}]
