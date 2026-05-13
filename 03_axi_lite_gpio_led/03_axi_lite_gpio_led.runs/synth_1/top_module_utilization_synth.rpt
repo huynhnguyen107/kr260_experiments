@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Mon May 11 15:10:35 2026
+| Date         : Tue May 12 22:09:19 2026
 | Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
 | Design       : top_module
@@ -164,16 +164,17 @@ Warning! LUT value is adjusted to account for LUT combining.
 9. Black Boxes
 --------------
 
-+----------------------------------+------+
-|             Ref Name             | Used |
-+----------------------------------+------+
-| axi_gpio_led_zynq_ultra_ps_e_0_0 |    1 |
-| axi_gpio_led_xbar_0              |    1 |
-| axi_gpio_led_rst_ps8_0_99M_0     |    1 |
-| axi_gpio_led_axi_gpio_0_0        |    1 |
-| axi_gpio_led_auto_pc_0           |    1 |
-| axi_gpio_led_auto_ds_0           |    1 |
-+----------------------------------+------+
++------------------------------------+------+
+|              Ref Name              | Used |
++------------------------------------+------+
+| axi_gpio_led_zynq_ultra_ps_e_0_0   |    1 |
+| axi_gpio_led_xbar_0                |    1 |
+| axi_gpio_led_rst_ps8_0_99M_0       |    1 |
+| axi_gpio_led_pl_counter_status_0_0 |    1 |
+| axi_gpio_led_axi_gpio_0_0          |    1 |
+| axi_gpio_led_auto_pc_0             |    1 |
+| axi_gpio_led_auto_ds_0             |    1 |
++------------------------------------+------+
 
 
 10. Instantiated Netlists

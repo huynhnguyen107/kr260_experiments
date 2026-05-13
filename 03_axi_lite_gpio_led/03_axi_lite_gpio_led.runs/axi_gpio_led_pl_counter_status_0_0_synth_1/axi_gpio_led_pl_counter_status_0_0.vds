@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May 12 22:06:10 2026
+# Process ID: 52456
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/axi_gpio_led_pl_counter_status_0_0_synth_1
+# Command line: vivado.exe -log axi_gpio_led_pl_counter_status_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_gpio_led_pl_counter_status_0_0.tcl
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/axi_gpio_led_pl_counter_status_0_0_synth_1/axi_gpio_led_pl_counter_status_0_0.vds
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/axi_gpio_led_pl_counter_status_0_0_synth_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source axi_gpio_led_pl_counter_status_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 377.766 ; gain = 60.375
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axi_gpio_led_pl_counter_status_0_0
+Command: synth_design -top axi_gpio_led_pl_counter_status_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39304
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1758.266 ; gain = 332.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_gpio_led_pl_counter_status_0_0' [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_pl_counter_status_0_0/synth/axi_gpio_led_pl_counter_status_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pl_counter_status' [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/pl_counter_status.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pl_counter_status' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.srcs/sources_1/new/pl_counter_status.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_gpio_led_pl_counter_status_0_0' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/ip/axi_gpio_led_pl_counter_status_0_0/synth/axi_gpio_led_pl_counter_status_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1850.309 ; gain = 424.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1850.309 ; gain = 424.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1850.309 ; gain = 424.613
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1850.309 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1915.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1933.676 ; gain = 17.938
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1933.676 ; gain = 507.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1933.676 ; gain = 507.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1933.676 ; gain = 507.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1933.676 ; gain = 507.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1933.676 ; gain = 507.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2420.066 ; gain = 994.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2420.066 ; gain = 994.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2439.152 ; gain = 1013.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     8|
+|2     |LUT1   |     3|
+|3     |LUT3   |     1|
+|4     |LUT5   |     1|
+|5     |LUT6   |     5|
+|6     |FDRE   |    59|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 2445.957 ; gain = 936.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2445.957 ; gain = 1020.262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2457.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2482.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 88ba5736
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:21 . Memory (MB): peak = 2482.984 ; gain = 2033.684
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/axi_gpio_led_pl_counter_status_0_0_synth_1/axi_gpio_led_pl_counter_status_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_gpio_led_pl_counter_status_0_0, cache-ID = 662f2aba0c30d5cb
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.runs/axi_gpio_led_pl_counter_status_0_0_synth_1/axi_gpio_led_pl_counter_status_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_gpio_led_pl_counter_status_0_0_utilization_synth.rpt -pb axi_gpio_led_pl_counter_status_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 12 22:07:55 2026...

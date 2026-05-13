@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1778526574" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/axi_gpio_led_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1778637963" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/axi_gpio_led_wrapper.dcp">
   <File Type="PA-TCL" Name="top_module.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_module_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_module_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_module.vds"/>
   <File Type="RDS-UTIL" Name="top_module_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_module_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top_module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/pl_counter_status.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/axi_gpio_led/axi_gpio_led.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -61,5 +71,6 @@
   <BlockFileSet Type="BlockSrcs" Name="axi_gpio_led_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_gpio_led_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_gpio_led_rst_ps8_0_99M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_gpio_led_pl_counter_status_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_gpio_led_xbar_0"/>
 </GenRun>

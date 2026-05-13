@@ -22,7 +22,8 @@
         "s01_couplers": {},
         "m00_couplers": {}
       },
-      "rst_ps8_0_99M": ""
+      "rst_ps8_0_99M": "",
+      "pl_counter_status_0": ""
     },
     "ports": {
       "led": {
@@ -1332,11 +1333,17 @@
         "xci_path": "ip\\axi_gpio_led_axi_gpio_0_0\\axi_gpio_led_axi_gpio_0_0.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
+          "C_ALL_INPUTS_2": {
+            "value": "1"
+          },
           "C_ALL_OUTPUTS": {
             "value": "1"
           },
           "C_GPIO_WIDTH": {
             "value": "2"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
           }
         }
       },
@@ -1782,6 +1789,48 @@
         "xci_name": "axi_gpio_led_rst_ps8_0_99M_0",
         "xci_path": "ip\\axi_gpio_led_rst_ps8_0_99M_0\\axi_gpio_led_rst_ps8_0_99M_0.xci",
         "inst_hier_path": "rst_ps8_0_99M"
+      },
+      "pl_counter_status_0": {
+        "vlnv": "xilinx.com:module_ref:pl_counter_status:1.0",
+        "xci_name": "axi_gpio_led_pl_counter_status_0_0",
+        "xci_path": "ip\\axi_gpio_led_pl_counter_status_0_0\\axi_gpio_led_pl_counter_status_0_0.xci",
+        "inst_hier_path": "pl_counter_status_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pl_counter_status",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "99999001",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "axi_gpio_led_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "counter": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1805,6 +1854,12 @@
           "led"
         ]
       },
+      "pl_counter_status_0_counter": {
+        "ports": [
+          "pl_counter_status_0/counter",
+          "axi_gpio_0/gpio2_io_i"
+        ]
+      },
       "rst_ps8_0_99M_peripheral_aresetn": {
         "ports": [
           "rst_ps8_0_99M/peripheral_aresetn",
@@ -1812,7 +1867,8 @@
           "axi_gpio_0/s_axi_aresetn",
           "ps8_0_axi_periph/M00_ARESETN",
           "ps8_0_axi_periph/ARESETN",
-          "ps8_0_axi_periph/S01_ARESETN"
+          "ps8_0_axi_periph/S01_ARESETN",
+          "pl_counter_status_0/rst_n"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -1824,7 +1880,8 @@
           "axi_gpio_0/s_axi_aclk",
           "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
-          "ps8_0_axi_periph/S01_ACLK"
+          "ps8_0_axi_periph/S01_ACLK",
+          "pl_counter_status_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

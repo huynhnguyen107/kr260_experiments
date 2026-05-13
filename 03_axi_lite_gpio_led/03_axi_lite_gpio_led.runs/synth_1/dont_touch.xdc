@@ -27,4 +27,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_gpio_le
 # IP: bd/axi_gpio_led/ip/axi_gpio_led_auto_pc_0/axi_gpio_led_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_gpio_led_auto_pc_0 || ORIG_REF_NAME==axi_gpio_led_auto_pc_0} -quiet] -quiet
 
+# IP: bd/axi_gpio_led/ip/axi_gpio_led_pl_counter_status_0_0/axi_gpio_led_pl_counter_status_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_gpio_led_pl_counter_status_0_0 || ORIG_REF_NAME==axi_gpio_led_pl_counter_status_0_0} -quiet] -quiet
+
 # XDC: d:/FPGA/Vivaldo Project/kr260_experiments/03_axi_lite_gpio_led/03_axi_lite_gpio_led.gen/sources_1/bd/axi_gpio_led/axi_gpio_led_ooc.xdc

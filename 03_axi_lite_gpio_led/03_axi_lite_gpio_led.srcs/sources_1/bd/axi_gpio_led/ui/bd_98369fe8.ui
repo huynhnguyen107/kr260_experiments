@@ -1,23 +1,25 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.726667",
-   "Default View_TopLeft":"483,-402",
+   "Default View_ScaleFactor":"1.05542",
+   "Default View_TopLeft":"427,-24",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace portBus led -pg 1 -lvl 4 -x 1320 -y -340 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 310 -y -10 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 820 -y 0 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 3 -x 1150 -y -200 -defaultsOSRD
-preplace inst rst_ps8_0_99M -pg 1 -lvl 2 -x 820 -y -180 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 -100 610 -280 990
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 620 -200n
-preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 640 -80 1010
-preplace netloc axi_gpio_0_gpio_io_o 1 2 2 1000J -350 1300
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 2 600J -290 N
-preplace netloc ps8_0_axi_periph_M00_AXI 1 1 3 630 -360 NJ -360 1290
-levelinfo -pg 1 0 310 820 1150 1320
-pagesize -pg 1 -db -bbox -sgen 0 -410 1420 180
+preplace portBus led -pg 1 -lvl 5 -x 1420 -y 210 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 290 -y 120 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1030 -y 210 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 740 -y 180 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 290 -y 320 -defaultsOSRD
+preplace inst pl_counter_status_0 -pg 1 -lvl 4 -x 1290 -y 340 -defaultsOSRD
+preplace netloc axi_gpio_0_gpio_io_o 1 3 2 N 200 1400
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 3 600 340 890J 350 N
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 0 30 590 330 880J 330 N
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -10 20 580
+preplace netloc pl_counter_status_0_counter 1 3 2 NJ 240 1400
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 880 180n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 90
+levelinfo -pg 1 -30 290 740 1030 1290 1420
+pagesize -pg 1 -db -bbox -sgen -30 0 1520 420
 "
 }
 {

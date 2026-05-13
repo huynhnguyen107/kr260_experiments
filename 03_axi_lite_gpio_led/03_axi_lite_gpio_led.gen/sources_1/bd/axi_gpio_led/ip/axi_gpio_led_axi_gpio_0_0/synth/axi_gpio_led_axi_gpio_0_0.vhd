@@ -77,7 +77,8 @@ ENTITY axi_gpio_led_axi_gpio_0_0 IS
     s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_rvalid : OUT STD_LOGIC;
     s_axi_rready : IN STD_LOGIC;
-    gpio_io_o : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+    gpio_io_o : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    gpio2_io_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END axi_gpio_led_axi_gpio_0_0;
 
@@ -136,9 +137,11 @@ ARCHITECTURE axi_gpio_led_axi_gpio_0_0_arch OF axi_gpio_led_axi_gpio_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF axi_gpio_led_axi_gpio_0_0_arch : ARCHITECTURE IS "axi_gpio_led_axi_gpio_0_0,axi_gpio,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF axi_gpio_led_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio_led_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=29,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=2,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
+  ATTRIBUTE CORE_GENERATION_INFO OF axi_gpio_led_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio_led_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=29,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=2,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=1,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=1,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_PARAMETER OF gpio2_io_i: SIGNAL IS "XIL_INTERFACENAME GPIO2, BOARD.ASSOCIATED_PARAM GPIO2_BOARD_INTERFACE";
+  ATTRIBUTE X_INTERFACE_INFO OF gpio2_io_i: SIGNAL IS "xilinx.com:interface:gpio:1.0 GPIO2 TRI_I";
   ATTRIBUTE X_INTERFACE_PARAMETER OF gpio_io_o: SIGNAL IS "XIL_INTERFACENAME GPIO, BOARD.ASSOCIATED_PARAM GPIO_BOARD_INTERFACE";
   ATTRIBUTE X_INTERFACE_INFO OF gpio_io_o: SIGNAL IS "xilinx.com:interface:gpio:1.0 GPIO TRI_O";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclk: SIGNAL IS "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN axi_gpio_led_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0";
@@ -173,13 +176,13 @@ BEGIN
       C_GPIO_WIDTH => 2,
       C_GPIO2_WIDTH => 32,
       C_ALL_INPUTS => 0,
-      C_ALL_INPUTS_2 => 0,
+      C_ALL_INPUTS_2 => 1,
       C_ALL_OUTPUTS => 1,
       C_ALL_OUTPUTS_2 => 0,
       C_INTERRUPT_PRESENT => 0,
       C_DOUT_DEFAULT => X"00000000",
       C_TRI_DEFAULT => X"FFFFFFFF",
-      C_IS_DUAL => 0,
+      C_IS_DUAL => 1,
       C_DOUT_DEFAULT_2 => X"00000000",
       C_TRI_DEFAULT_2 => X"FFFFFFFF"
     )
@@ -205,6 +208,6 @@ BEGIN
       s_axi_rready => s_axi_rready,
       gpio_io_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
       gpio_io_o => gpio_io_o,
-      gpio2_io_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32))
+      gpio2_io_i => gpio2_io_i
     );
 END axi_gpio_led_axi_gpio_0_0_arch;
