@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="axi_dma_loop_back_blk_mem_gen_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_dma_loop_back_axi_bram_ctrl_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_dma_loop_back_proc_sys_reset_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_dma_loop_back_axi_dma_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_dma_loop_back_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_dma_loop_back_smartconnect_0_0_synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/axi_dma_loop_back_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="axi_dma_loop_back_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_axi_dma_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_smartconnect_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/FPGA/Vivaldo Project/kr260_experiments/06_axi_dma_loop_back/06_axi_dma_loop_back.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="axi_dma_loop_back_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_axi_dma_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="axi_dma_loop_back_smartconnect_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
