@@ -1,0 +1,1254 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 05:00:03 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 22868
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu May 14 19:41:21 EDT 2026
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+Java executable: 	D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ADMIN
+User home directory: C:/Users/ADMIN
+User working directory: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2022.2
+RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/
+Vivado layouts directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	D:/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/vivado.log
+Vivado journal file: 	D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/vivado.jou
+Engine tmp dir: 	D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/.Xil/Vivado-22868-LAPTOP-CHCSI1R5
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: D:/Xilinx/Vivado/2022.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent10708 "D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: D:/Xilinx/Vivado
+RDI_BINDIR: D:/Xilinx/Vivado/2022.2/bin
+RDI_BINROOT: D:/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: D:/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_INSTALLVERSION: 2022.2
+RDI_JAVACEFROOT: D:/Xilinx/Vivado/2022.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: D:/Xilinx/Vivado/2022.2/tps/win64/javafx-sdk-11.0.2
+RDI_JAVAROOT: D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: D:/Xilinx/Vivado/2022.2/lib/win64.o
+RDI_MINGW_LIB: D:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\bin;D:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: D:/Xilinx/Vitis/2022.2/bin
+RDI_PROG: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\bin;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib
+RDI_TPS_ROOT: D:/Xilinx/Vivado/2022.2/tps/win64
+RDI_USE_JDK11: True
+RDI_VERBOSE: False
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2022.2
+XILINX_SDK: D:/Xilinx/Vitis/2022.2
+XILINX_VITIS: D:/Xilinx/Vitis/2022.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2022.2
+_RDI_BINROOT: D:\Xilinx\Vivado\2022.2\bin
+_RDI_CWD: D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core
+
+
+GUI allocated memory:	400 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 873 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 59 MB. Current time: 5/14/26, 7:41:22 PM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.xpr} 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 76 MB (+76757kb) [00:00:16]
+// [Engine Memory]: 968 MB (+863070kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  2747 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 97 MB (+18383kb) [00:00:18]
+// Project name: 08_axis_dma_configurable_stream_core; location: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core; part: xck26-sfvc784-2LV-c
+// Tcl Message: open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:12 . Memory (MB): peak = 1154.430 ; gain = 183.160 
+dismissDialog("Open Project"); // bq
+// [GUI Memory]: 103 MB (+1484kb) [00:00:18]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 68 MB. Current time: 5/14/26, 7:41:37 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (axis_dma_configurable_stream_core.bd) elapsed time: 0.2s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 2, false); // D
+// [GUI Memory]: 115 MB (+7040kb) [00:00:32]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create HDL Wrapper"); // a
+// TclEventType: LOAD_FEATURE
+// Tcl Message: make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -top 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0  
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,148 MB. GUI used memory: 69 MB. Current time: 5/14/26, 7:41:52 PM EDT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// Tcl Message: INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_proc_sys_reset_0_0  INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_smartconnect_0_0  
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,148 MB (+138776kb) [00:00:43]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 121 MB (+372kb) [00:00:49]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. 
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] axis_dma_configurable_stream_core_smartconnect_0_0: SmartConnect axis_dma_configurable_stream_core_smartconnect_0_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_RENAME_OBJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,264 MB. GUI used memory: 70 MB. Current time: 5/14/26, 7:42:07 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,273 MB (+70665kb) [00:00:58]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. 
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\axis_dma_configurable_stream_core\axis_dma_configurable_stream_core.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Create Top HDL Elapsed Time: 26.6s
+// Tcl Message: Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/synth/axis_dma_configurable_stream_core.v 
+// Tcl Message: Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/sim/axis_dma_configurable_stream_core.v Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v 
+// Tcl Message: make_wrapper: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1655.676 ; gain = 501.246 
+// Elapsed time: 26 seconds
+dismissDialog("Create HDL Wrapper"); // bq
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,505 MB (+176507kb) [00:01:04]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // f: FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // f: FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0_7/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0.xci'.. ]", 2, true); // u.d - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0'.. ]", 3, true); // u.d - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0'.. ]", 3); // u.d
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, axis_dma_configurable_stream_core_wrapper.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, axis_dma_configurable_stream_core_wrapper.v]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 128 MB (+747kb) [00:01:28]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, axis_dma_configurable_stream_core_wrapper.v]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a
+// Tcl Message: reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] 
+// Tcl Message: ERROR: [IP_Flow 19-542] Reset of the IP CORE failed.  
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [IP_Flow 19-542] Reset of the IP CORE failed.   
+dismissDialog("Managing Output Products"); // bq
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Block Design"); // au
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: create_bd_design "design_1" 
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd>  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,553 MB. GUI used memory: 72 MB. Current time: 5/14/26, 7:42:57 PM EDT
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1702.918 ; gain = 35.660 
+dismissDialog("Create Block Design"); // bq
+// [Engine Memory]: 1,597 MB (+17280kb) [00:01:48]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+selectMenuItem((HResource) null, "axis_dma_configurable_stream_core.bd"); // ao
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd} 
+// TclEventType: RSB_OPEN_DIAGRAM
+dismissDialog("Open Block Design"); // bq
+// JavaFX intialization before: 1778802184744
+// JavaFX initialization after: 1778802185969
+// WARNING: HTimer (Open addressing views timer) is taking 1299ms to process. Increasing delay to 1300 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 138 MB (+4140kb) [00:01:55]
+// [Engine Memory]: 1,712 MB (+36582kb) [00:01:55]
+// Run Command: RDIResourceCommand.RDICommands_COPY
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+selectMenuItem((HResource) null, "design_1.bd"); // ao
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bq
+// [GUI Memory]: 146 MB (+973kb) [00:01:59]
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design axis_dma_configurable_stream_core 
+// Tcl Message: set tmpCopyObjs [concat  [get_bd_cells {axi_bram_ctrl_0 zynq_ultra_ps_e_0 smartconnect_0 axi_dma_0 proc_sys_reset_0 axi_gpio_0 blk_mem_gen_0 axis_configurable_add_0}] [get_bd_intf_nets {smartconnect_0_M02_AXI smartconnect_0_M01_AXI axi_dma_0_M_AXI_MM2S axi_bram_ctrl_0_BRAM_PORTA axis_configurable_add_0_m_axis axi_dma_0_M_AXI_S2MM smartconnect_0_M00_AXI zynq_ultra_ps_e_0_M_AXI_HPM0_FPD axi_dma_0_M_AXIS_MM2S}] [get_bd_nets {zynq_ultra_ps_e_0_pl_resetn0 proc_sys_reset_0_peripheral_aresetn zynq_ultra_ps_e_0_pl_clk0 axi_gpio_0_gpio2_io_o axi_gpio_0_gpio_io_o}]] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: current_bd_design design_1 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: copy_bd_objs -from_design axis_dma_configurable_stream_core / $tmpCopyObjs 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,869 MB. GUI used memory: 86 MB. Current time: 5/14/26, 7:43:17 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_COPY_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,869 MB (+75486kb) [00:02:10]
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// Tcl Message: copy_bd_objs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1991.043 ; gain = 147.938 
+// Elapsed time: 11 seconds
+dismissDialog("Paste"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design 
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Validate Design"); // bq
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_dma_configurable_stream_core (axis_dma_configurable_stream_core.bd)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}} 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ui/bd_50b3497d.ui>  
+// Tcl Message: file delete -force {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core} file delete -force {d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core} 
+dismissDialog("Remove Sources"); // bq
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create HDL Wrapper"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}}] -top 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v 
+// Tcl Message: Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Create Top HDL Elapsed Time: 1.9s
+// Tcl Message: add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}} 
+dismissDialog("Create HDL Wrapper"); // bq
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, axis_dma_configurable_stream_core_wrapper.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, axis_dma_configurable_stream_core_wrapper.v]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v 
+// Tcl Message: Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_configurable_add_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 . 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,888 MB. GUI used memory: 86 MB. Current time: 5/14/26, 7:44:57 PM EDT
+// Tcl Message: INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,893 MB. GUI used memory: 86 MB. Current time: 5/14/26, 7:45:22 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created. 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 . 
+// Tcl Message: Exporting to file D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,893 MB. GUI used memory: 88 MB. Current time: 5/14/26, 7:45:28 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Elapsed time: 64 seconds
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1495 ms. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 733ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 164 MB (+10941kb) [00:11:35]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 176 MB (+3656kb) [00:13:56]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 993 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+// Elapsed time: 441 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bq
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_IP_INTEGRATOR, "Close"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_IP_INTEGRATOR
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs design_1] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Close Block Design"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0 Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM. Successfully read diagram <design_1> from block design file <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Block Design"); // bq
+// JavaFX intialization before: 1778803801786
+// JavaFX initialization after: 1778803801786
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O
+// Elapsed time: 112 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_gpio_0/S_AXI ; S_AXI ; Reg ; 0x00_A006_0000 ; 64K ; 0x00_A006_FFFF", 16, "/axi_gpio_0/S_AXI", 0, false); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bq
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,893 MB. GUI used memory: 111 MB. Current time: 5/14/26, 8:15:28 PM EDT
+// Elapsed time: 240 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 69 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_configurable_add (axis_configurable_add.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_configurable_add (axis_configurable_add.v)]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("axis_configurable_add.v", 198, 266); // ac
+selectCodeEditor("axis_configurable_add.v", 391, 240); // ac
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // g
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference design_1_axis_configurable_add_0_0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: Upgrading 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_axis_configurable_add_0_0 to use current project options 
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Refresh Changed Modules"); // bq
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // g
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/synth_1/design_1_wrapper.dcp to D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode. INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S. Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v 
+// Tcl Message: Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_configurable_add_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 . 
+// Tcl Message: Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axis_configurable_add_0_0 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_smartconnect_0_0 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork() 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu May 14 20:18:43 2026] Launched design_1_axis_configurable_add_0_0_synth_1, synth_1... Run output will be captured here: design_1_axis_configurable_add_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axis_configurable_add_0_0_synth_1/runme.log synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/synth_1/runme.log [Thu May 14 20:18:43 2026] Launched impl_1... Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/impl_1/runme.log 
+// Elapsed time: 55 seconds
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 189 MB (+4945kb) [00:48:13]
+// Elapsed time: 825 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a

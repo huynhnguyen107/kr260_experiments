@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 14 19:41:09 2026
+# Process ID: 22868
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10708 D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.xpr
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -top
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}]
+create_bd_design "design_1"
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+current_bd_design axis_dma_configurable_stream_core
+set tmpCopyObjs [concat  [get_bd_cells {axi_bram_ctrl_0 zynq_ultra_ps_e_0 smartconnect_0 axi_dma_0 proc_sys_reset_0 axi_gpio_0 blk_mem_gen_0 axis_configurable_add_0}] [get_bd_intf_nets {smartconnect_0_M02_AXI smartconnect_0_M01_AXI axi_dma_0_M_AXI_MM2S axi_bram_ctrl_0_BRAM_PORTA axis_configurable_add_0_m_axis axi_dma_0_M_AXI_S2MM smartconnect_0_M00_AXI zynq_ultra_ps_e_0_M_AXI_HPM0_FPD axi_dma_0_M_AXIS_MM2S}] [get_bd_nets {zynq_ultra_ps_e_0_pl_resetn0 proc_sys_reset_0_peripheral_aresetn zynq_ultra_ps_e_0_pl_clk0 axi_gpio_0_gpio2_io_o axi_gpio_0_gpio_io_o}]]
+current_bd_design design_1
+copy_bd_objs -from_design axis_dma_configurable_stream_core / $tmpCopyObjs
+save_bd_design
+validate_bd_design
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}
+file delete -force {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core}
+file delete -force {d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core}
+regenerate_bd_layout
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+close_bd_design [get_bd_designs design_1]
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+update_module_reference design_1_axis_configurable_add_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

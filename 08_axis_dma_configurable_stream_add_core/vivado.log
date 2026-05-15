@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 14 19:41:09 2026
+# Process ID: 22868
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10708 D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.xpr
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.ip_user_files'.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0_6/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_proc_sys_reset_0_0_6/axis_dma_configurable_stream_core_proc_sys_reset_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_smartconnect_0_0_6/axis_dma_configurable_stream_core_smartconnect_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0_6/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_blk_mem_gen_0_0_6/axis_dma_configurable_stream_core_blk_mem_gen_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_dma_0_0_6/axis_dma_configurable_stream_core_axi_dma_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_gpio_0_0_6/axis_dma_configurable_stream_core_axi_gpio_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+WARNING: [BD 41-2576] File 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axis_configurable_add_0_0_5/axis_dma_configurable_stream_core_axis_configurable_add_0_0.xci' referenced by design 'axis_dma_configurable_stream_core' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:12 . Memory (MB): peak = 1154.430 ; gain = 183.160
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -top
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0_7/axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_zynq_ultra_ps_e_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_proc_sys_reset_0_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_proc_sys_reset_0_0_7/axis_dma_configurable_stream_core_proc_sys_reset_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_proc_sys_reset_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_smartconnect_0_0 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_smartconnect_0_0_7/axis_dma_configurable_stream_core_smartconnect_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_smartconnect_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_axi_bram_ctrl_0_0 
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] axis_dma_configurable_stream_core_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] axis_dma_configurable_stream_core_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0_7/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_bram_ctrl_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_blk_mem_gen_0_0 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_blk_mem_gen_0_0_7/axis_dma_configurable_stream_core_blk_mem_gen_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_blk_mem_gen_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_axi_dma_0_0 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_dma_0_0_7/axis_dma_configurable_stream_core_axi_dma_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_dma_0_0'.
+INFO: [BD 41-434] Could not find an IP with XCI file by name: axis_dma_configurable_stream_core_axi_gpio_0_0 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_gpio_0_0_7/axis_dma_configurable_stream_core_axi_gpio_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_gpio_0_0'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [BD 41-1728] Could not find a module with name: axis_dma_configurable_stream_core_axis_configurable_add_0_0 
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axis_configurable_add_0_0_6/axis_dma_configurable_stream_core_axis_configurable_add_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axis_configurable_add_0_0'.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [xilinx.com:ip:smartconnect:1.0-1] axis_dma_configurable_stream_core_smartconnect_0_0: SmartConnect axis_dma_configurable_stream_core_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_smartconnect_0_0_7/axis_dma_configurable_stream_core_smartconnect_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_smartconnect_0_0'.
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0_7/axis_dma_configurable_stream_core_axi_bram_ctrl_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_bram_ctrl_0_0'.
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_blk_mem_gen_0_0_7/axis_dma_configurable_stream_core_blk_mem_gen_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_blk_mem_gen_0_0'.
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_dma_0_0_7/axis_dma_configurable_stream_core_axi_dma_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_dma_0_0'.
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_axi_gpio_0_0_7/axis_dma_configurable_stream_core_axi_gpio_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_axi_gpio_0_0'.
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\axis_dma_configurable_stream_core\axis_dma_configurable_stream_core.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/synth/axis_dma_configurable_stream_core.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/sim/axis_dma_configurable_stream_core.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1655.676 ; gain = 501.246
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}]
+CRITICAL WARNING: [IP_Flow 19-196] Failed to save XCI file 'd:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ip/axis_dma_configurable_stream_core_smartconnect_0_0_7/axis_dma_configurable_stream_core_smartconnect_0_0.xci'.
+CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'axis_dma_configurable_stream_core_smartconnect_0_0'.
+ERROR: [IP_Flow 19-542] Reset of the IP CORE failed.
+
+create_bd_design "design_1"
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1702.918 ; gain = 35.660
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}
+Reading block design file <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:axis_configurable_add:1.0 - axis_configurable_add_0
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Successfully read diagram <axis_dma_configurable_stream_core> from block design file <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd>
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+current_bd_design axis_dma_configurable_stream_core
+set tmpCopyObjs [concat  [get_bd_cells {axi_bram_ctrl_0 zynq_ultra_ps_e_0 smartconnect_0 axi_dma_0 proc_sys_reset_0 axi_gpio_0 blk_mem_gen_0 axis_configurable_add_0}] [get_bd_intf_nets {smartconnect_0_M02_AXI smartconnect_0_M01_AXI axi_dma_0_M_AXI_MM2S axi_bram_ctrl_0_BRAM_PORTA axis_configurable_add_0_m_axis axi_dma_0_M_AXI_S2MM smartconnect_0_M00_AXI zynq_ultra_ps_e_0_M_AXI_HPM0_FPD axi_dma_0_M_AXIS_MM2S}] [get_bd_nets {zynq_ultra_ps_e_0_pl_resetn0 proc_sys_reset_0_peripheral_aresetn zynq_ultra_ps_e_0_pl_clk0 axi_gpio_0_gpio2_io_o axi_gpio_0_gpio_io_o}]]
+current_bd_design design_1
+copy_bd_objs -from_design axis_dma_configurable_stream_core / $tmpCopyObjs
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio2_io_o> is being overridden by the user with net <axi_gpio_0_gpio2_io_o>. This pin will not be connected as a part of interface connection <GPIO2>.
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0xA002_0000 [ 64K ]>.
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0xA002_0000 [ 64K ]>.
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA002_0000 [ 64K ]>.
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA004_0000 [ 64K ]>.
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA006_0000 [ 64K ]>.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x8000_0000 [ 64K ]>.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x8001_0000 [ 64K ]>.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x8000_0000 [ 64K ]>.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x8001_0000 [ 64K ]>.
+copy_bd_objs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1991.043 ; gain = 147.938
+save_bd_design
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+validate_bd_design
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/axis_dma_configurable_stream_core.bd}}
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core/ui/bd_50b3497d.ui> 
+file delete -force {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/axis_dma_configurable_stream_core}
+file delete -force {d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core}
+regenerate_bd_layout
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}}] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/axis_dma_configurable_stream_core/hdl/axis_dma_configurable_stream_core_wrapper.v}}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_configurable_add_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.4-0] design_1_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+Exporting to file D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_dma_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axis_configurable_add_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_blk_mem_gen_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_smartconnect_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_zynq_ultra_ps_e_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dma_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_configurable_add_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_blk_mem_gen_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_smartconnect_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_zynq_ultra_ps_e_0_0
+[Thu May 14 19:45:31 2026] Launched design_1_axis_configurable_add_0_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_axi_gpio_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1, design_1_smartconnect_0_0_synth_1, design_1_zynq_ultra_ps_e_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axis_configurable_add_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axis_configurable_add_0_0_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+design_1_smartconnect_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_smartconnect_0_0_synth_1/runme.log
+design_1_zynq_ultra_ps_e_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/runme.log
+synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/synth_1/runme.log
+[Thu May 14 19:45:31 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/impl_1/runme.log
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+close_bd_design [get_bd_designs design_1]
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:axis_configurable_add:1.0 - axis_configurable_add_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Successfully read diagram <design_1> from block design file <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+update_module_reference design_1_axis_configurable_add_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_axis_configurable_add_0_0 to use current project options
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/synth_1/design_1_wrapper.dcp to D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_gpio_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_bram_ctrl_0/S_AXI(0) and /smartconnect_0/M00_AXI(16)
+Wrote  : <D:\FPGA\Vivaldo Project\kr260_experiments\08_axis_dma_configurable_stream_add_core\08_axis_dma_configurable_stream_core.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_configurable_add_0 .
+Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axis_configurable_add_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_smartconnect_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axis_configurable_add_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_smartconnect_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry ada83893761184d9 to dir: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.cache/ip/2022.2/a/d/ada83893761184d9/design_1_smartconnect_0_0.dcp to d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.cache/ip/2022.2/a/d/ada83893761184d9/design_1_smartconnect_0_0_sim_netlist.v to d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.cache/ip/2022.2/a/d/ada83893761184d9/design_1_smartconnect_0_0_sim_netlist.vhdl to d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.cache/ip/2022.2/a/d/ada83893761184d9/design_1_smartconnect_0_0_stub.v to d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.cache/ip/2022.2/a/d/ada83893761184d9/design_1_smartconnect_0_0_stub.vhdl to d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = ada83893761184d9; cache size = 52.021 MB.
+[Thu May 14 20:18:43 2026] Launched design_1_axis_configurable_add_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axis_configurable_add_0_0_synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/design_1_axis_configurable_add_0_0_synth_1/runme.log
+synth_1: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/synth_1/runme.log
+[Thu May 14 20:18:43 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/08_axis_dma_configurable_stream_core.runs/impl_1/runme.log

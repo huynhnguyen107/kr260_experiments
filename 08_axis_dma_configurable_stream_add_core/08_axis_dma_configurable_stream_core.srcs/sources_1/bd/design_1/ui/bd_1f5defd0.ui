@@ -1,0 +1,34 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.650838",
+   "Default View_TopLeft":"-141,-227",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1780 -y 300 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1020 -y 390 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1780 -y 90 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -x 2050 -y 300 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 140 -y 380 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1470 -y 300 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1020 -y 660 -defaultsOSRD
+preplace inst axis_configurable_add_0 -pg 1 -lvl 2 -x 530 -y 370 -defaultsOSRD
+preplace netloc axi_gpio_0_gpio2_io_o 1 1 5 340 190 NJ 190 NJ 190 NJ 190 1920
+preplace netloc axi_gpio_0_gpio_io_o 1 1 5 330 160 NJ 160 NJ 160 1630J 180 1930
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 4 310 520 710 210 1340 180 1620
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 5 -40 480 320 530 730 560 1320 170 1640
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 4 -30 570 NJ 570 NJ 570 1310
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 N 300
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 3 350 220 NJ 220 1310
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 280
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 N 300
+preplace netloc axis_configurable_add_0_m_axis 1 2 1 720 320n
+preplace netloc smartconnect_0_M00_AXI 1 4 1 N 280
+preplace netloc smartconnect_0_M01_AXI 1 2 3 730 200 NJ 200 1600
+preplace netloc smartconnect_0_M02_AXI 1 4 1 1610 70n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 1330 260n
+levelinfo -pg 1 -60 140 530 1020 1470 1780 2050 2180
+pagesize -pg 1 -db -bbox -sgen -60 0 2180 760
+"
+}
+0
