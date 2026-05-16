@@ -1,0 +1,1 @@
+This project demonstrates a Linux user-space C application that controls a KR260 FPGA accelerator through /dev/mem and mmap. The application configures an AXI GPIO control interface, writes input samples to AXI BRAM, starts AXI DMA MM2S/S2MM transfers, and verifies the processed AXI-Stream output from a configurable add core.
