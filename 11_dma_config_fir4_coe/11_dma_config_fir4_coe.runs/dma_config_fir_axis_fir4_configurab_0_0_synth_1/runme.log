@@ -1,0 +1,413 @@
+
+*** Running vivado
+    with args -log dma_config_fir_axis_fir4_configurab_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_config_fir_axis_fir4_configurab_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source dma_config_fir_axis_fir4_configurab_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 377.422 ; gain = 64.281
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_dma_config_fir4_coe.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_config_fir_axis_fir4_configurab_0_0
+Command: synth_design -top dma_config_fir_axis_fir4_configurab_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28124
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1758.336 ; gain = 332.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dma_config_fir_axis_fir4_configurab_0_0' [d:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_axis_dma_configurable_fir4_coefficients.gen/sources_1/bd/dma_config_fir/ip/dma_config_fir_axis_fir4_configurab_0_0/synth/dma_config_fir_axis_fir4_configurab_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_fir4_configurable' [D:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_dma_config_fir4_coe.srcs/sources_1/new/axis_fir4_configurable.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axis_fir4_configurable' (0#1) [D:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_dma_config_fir4_coe.srcs/sources_1/new/axis_fir4_configurable.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dma_config_fir_axis_fir4_configurab_0_0' (0#1) [d:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_axis_dma_configurable_fir4_coefficients.gen/sources_1/bd/dma_config_fir/ip/dma_config_fir_axis_fir4_configurab_0_0/synth/dma_config_fir_axis_fir4_configurab_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1854.230 ; gain = 428.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1854.230 ; gain = 428.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1854.230 ; gain = 428.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1854.230 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1936.188 ; gain = 17.906
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1936.188 ; gain = 510.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1936.188 ; gain = 510.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1936.188 ; gain = 510.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1936.188 ; gain = 510.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   32 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 4     
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	               8x32  Multipliers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/p1_r0, operation Mode is: A2*B.
+DSP Report: register inst/p1_r0 is absorbed into DSP inst/p1_r0.
+DSP Report: operator inst/p1_r0 is absorbed into DSP inst/p1_r0.
+DSP Report: operator inst/p1_r0 is absorbed into DSP inst/p1_r0.
+DSP Report: Generating DSP inst/p1_r_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register inst/p1_r_reg is absorbed into DSP inst/p1_r_reg.
+DSP Report: operator inst/p1_r0 is absorbed into DSP inst/p1_r_reg.
+DSP Report: operator inst/p1_r0 is absorbed into DSP inst/p1_r_reg.
+DSP Report: Generating DSP inst/p2_r0, operation Mode is: A''*B.
+DSP Report: register inst/p2_r0 is absorbed into DSP inst/p2_r0.
+DSP Report: register inst/p2_r0 is absorbed into DSP inst/p2_r0.
+DSP Report: operator inst/p2_r0 is absorbed into DSP inst/p2_r0.
+DSP Report: operator inst/p2_r0 is absorbed into DSP inst/p2_r0.
+DSP Report: Generating DSP inst/p2_r_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register inst/x2_reg is absorbed into DSP inst/p2_r_reg.
+DSP Report: register inst/p2_r_reg is absorbed into DSP inst/p2_r_reg.
+DSP Report: operator inst/p2_r0 is absorbed into DSP inst/p2_r_reg.
+DSP Report: operator inst/p2_r0 is absorbed into DSP inst/p2_r_reg.
+DSP Report: Generating DSP inst/p3_r0, operation Mode is: A''*B.
+DSP Report: register inst/p3_r0 is absorbed into DSP inst/p3_r0.
+DSP Report: register inst/p3_r0 is absorbed into DSP inst/p3_r0.
+DSP Report: operator inst/p3_r0 is absorbed into DSP inst/p3_r0.
+DSP Report: operator inst/p3_r0 is absorbed into DSP inst/p3_r0.
+DSP Report: Generating DSP inst/p3_r_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register inst/x2_reg is absorbed into DSP inst/p3_r_reg.
+DSP Report: register inst/x3_reg is absorbed into DSP inst/p3_r_reg.
+DSP Report: register inst/p3_r_reg is absorbed into DSP inst/p3_r_reg.
+DSP Report: operator inst/p3_r0 is absorbed into DSP inst/p3_r_reg.
+DSP Report: operator inst/p3_r0 is absorbed into DSP inst/p3_r_reg.
+DSP Report: Generating DSP inst/p0_r0, operation Mode is: A*B.
+DSP Report: operator inst/p0_r0 is absorbed into DSP inst/p0_r0.
+DSP Report: operator inst/p0_r0 is absorbed into DSP inst/p0_r0.
+DSP Report: Generating DSP inst/p0_r_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register inst/p0_r_reg is absorbed into DSP inst/p0_r_reg.
+DSP Report: operator inst/p0_r0 is absorbed into DSP inst/p0_r_reg.
+DSP Report: operator inst/p0_r0 is absorbed into DSP inst/p0_r_reg.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[47]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[46]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[45]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[44]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[43]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[42]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[41]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[40]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[39]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[38]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[37]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[36]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[35]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[34]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[33]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[32]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[31]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[30]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[29]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[28]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[27]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[26]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[25]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[24]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[23]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[22]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[21]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[20]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[19]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[18]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p1_r_reg[17]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[47]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[46]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[45]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[44]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[43]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[42]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[41]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[40]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[39]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[38]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[37]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[36]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[35]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[34]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[33]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[32]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[31]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[30]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[29]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[28]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[27]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[26]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[25]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[24]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[23]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[22]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[21]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[20]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[19]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[18]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p2_r_reg[17]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[47]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[46]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[45]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[44]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[43]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[42]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[41]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[40]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[39]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[38]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[37]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[36]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[35]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[34]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[33]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[32]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[31]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[30]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[29]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[28]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[27]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[26]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[25]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[24]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[23]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[22]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[21]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[20]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[19]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[18]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p3_r_reg[17]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[47]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[46]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[45]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[44]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[43]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[42]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/p0_r_reg[41]) is unused and will be removed from module dma_config_fir_axis_fir4_configurab_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1936.188 ; gain = 510.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                             | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dma_config_fir_axis_fir4_configurab_0_0 | A2*B             | 18     | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17)+A*B   | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A''*B            | 18     | 8      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17)+A2*B  | 15     | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A''*B            | 18     | 8      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17)+A''*B | 15     | 8      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A*B              | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17)+A*B   | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2443.469 ; gain = 1018.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2443.469 ; gain = 1018.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2452.430 ; gain = 1027.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                             | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dma_config_fir_axis_fir4_configurab_0_0 | A'*B              | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17+A'*B)'  | 30     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A''*B             | 17     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17+A''*B)' | 30     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A''*B             | 17     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17+A''*B)' | 30     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | A*B               | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dma_config_fir_axis_fir4_configurab_0_0 | (PCIN>>17+A*B)'   | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |     4|
+|2     |DSP_ALU         |     8|
+|3     |DSP_A_B_DATA    |     8|
+|6     |DSP_C_DATA      |     8|
+|7     |DSP_MULTIPLIER  |     8|
+|8     |DSP_M_DATA      |     8|
+|9     |DSP_OUTPUT      |     8|
+|11    |DSP_PREADD      |     8|
+|12    |DSP_PREADD_DATA |     8|
+|13    |LUT2            |     2|
+|14    |LUT3            |    64|
+|15    |LUT4            |     4|
+|16    |LUT5            |    29|
+|17    |LUT6            |    30|
+|18    |FDRE            |   145|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 2461.566 ; gain = 954.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2461.566 ; gain = 1036.191
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2473.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2496.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+
+Synth Design complete, checksum: 8ddc93b5
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 2496.949 ; gain = 2048.520
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_dma_config_fir4_coe.runs/dma_config_fir_axis_fir4_configurab_0_0_synth_1/dma_config_fir_axis_fir4_configurab_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dma_config_fir_axis_fir4_configurab_0_0, cache-ID = 8245ed36dd4ed23c
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/11_dma_config_fir4_coe/11_dma_config_fir4_coe.runs/dma_config_fir_axis_fir4_configurab_0_0_synth_1/dma_config_fir_axis_fir4_configurab_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dma_config_fir_axis_fir4_configurab_0_0_utilization_synth.rpt -pb dma_config_fir_axis_fir4_configurab_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 16:47:13 2026...

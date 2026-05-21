@@ -48,3 +48,327 @@ update_module_reference design_1_axis_configurable_add_0_0
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+close_project
+create_project 10_axis_dma_fir4_stream_accelerator {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator} -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
+create_bd_design "axis_dma_fir4_stream_accelerator"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property location {2.5 1169 -117} [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_lpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property location {3.5 1597 -138} [get_bd_cells smartconnect_0]
+connect_bd_net [get_bd_pins smartconnect_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins smartconnect_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD] [get_bd_intf_pins smartconnect_0/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property location {3.5 1805 -134} [get_bd_cells axi_bram_ctrl_0]
+set_property CONFIG.SINGLE_PORT_BRAM {1} [get_bd_cells axi_bram_ctrl_0]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins smartconnect_0/M00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {4.5 2025 -133} [get_bd_cells blk_mem_gen_0]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property CONFIG.c_include_sg {0} [get_bd_cells axi_dma_0]
+set_property location {5.5 2304 -101} [get_bd_cells axi_dma_0]
+startgroup
+set_property CONFIG.NUM_SI {3} [get_bd_cells smartconnect_0]
+endgroup
+startgroup
+set_property CONFIG.NUM_MI {3} [get_bd_cells smartconnect_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/S_AXI_LITE] [get_bd_intf_pins smartconnect_0/M01_AXI]
+connect_bd_net [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_mm2s_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_0/S01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S02_AXI]
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new/axis_fir4_fixed.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/new/axis_fir4_fixed.v}}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}
+create_bd_cell -type module -reference axis_fir4_fixed axis_fir4_fixed_0
+set_property location {6.5 2604 -191} [get_bd_cells axis_fir4_fixed_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {6.5 2507 65} [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins smartconnect_0/M02_AXI]
+startgroup
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {2} \
+] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {8 2821 70} [get_bd_cells xlslice_0]
+set_property CONFIG.DIN_WIDTH {2} [get_bd_cells xlslice_0]
+set_property CONFIG.DOUT_WIDTH {2} [get_bd_cells xlslice_0]
+set_property CONFIG.DOUT_WIDTH {1} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins xlslice_0/Din] [get_bd_pins axi_gpio_0/gpio_io_o]
+copy_bd_objs /  [get_bd_cells {xlslice_0}]
+set_property -dict [list \
+  CONFIG.DIN_FROM {1} \
+  CONFIG.DIN_TO {1} \
+] [get_bd_cells xlslice_1]
+connect_bd_net [get_bd_pins xlslice_1/Din] [get_bd_pins axi_gpio_0/gpio_io_o]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins axis_fir4_fixed_0/enable]
+undo
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins axis_fir4_fixed_0/clear]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins axis_fir4_fixed_0/enable]
+connect_bd_net [get_bd_pins axis_fir4_fixed_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axis_fir4_fixed_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axis_fir4_fixed_0/s_axis] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins axis_fir4_fixed_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+save_bd_design
+assign_bd_address
+validate_bd_design
+startgroup
+set_property -dict [list \
+  CONFIG.PSU__USE__M_AXI_GP0 {1} \
+  CONFIG.PSU__USE__M_AXI_GP2 {0} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD]
+endgroup
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD] [get_bd_intf_pins smartconnect_0/S00_AXI]
+save_bd_design
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] -force
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+set_property offset 0x00A0020000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0x00A0040000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_dma_0_Reg}]
+set_property offset 0x00A0060000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_Reg}]
+set_property range 32K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_Reg}]
+set_property range 64K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_dma_0_Reg}]
+set_property range 64K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {axi_dma_0/Data_MM2S/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {axi_dma_0/Data_MM2S/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {axi_dma_0/Data_S2MM/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xA0020000 [get_bd_addr_segs {axi_dma_0/Data_MM2S/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xA0020000 [get_bd_addr_segs {axi_dma_0/Data_S2MM/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.gen/sources_1/bd/axis_dma_fir4_stream_accelerator/hdl/axis_dma_fir4_stream_accelerator_wrapper.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}
+create_bd_design "fir4"
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}
+current_bd_design axis_dma_fir4_stream_accelerator
+set tmpCopyObjs [concat  [get_bd_cells {axi_bram_ctrl_0 zynq_ultra_ps_e_0 smartconnect_0 axi_dma_0 xlslice_0 xlslice_1 axis_fir4_fixed_0 proc_sys_reset_0 axi_gpio_0 blk_mem_gen_0}] [get_bd_intf_nets {smartconnect_0_M02_AXI smartconnect_0_M01_AXI axi_dma_0_M_AXI_MM2S axi_bram_ctrl_0_BRAM_PORTA axi_dma_0_M_AXI_S2MM smartconnect_0_M00_AXI zynq_ultra_ps_e_0_M_AXI_HPM0_FPD axis_fir4_fixed_0_m_axis axi_dma_0_M_AXIS_MM2S}] [get_bd_nets {proc_sys_reset_0_peripheral_aresetn zynq_ultra_ps_e_0_pl_resetn0 xlslice_0_Dout zynq_ultra_ps_e_0_pl_clk0 xlslice_1_Dout axi_gpio_0_gpio_io_o}]]
+current_bd_design fir4
+copy_bd_objs -from_design axis_dma_fir4_stream_accelerator / $tmpCopyObjs
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator/axis_dma_fir4_stream_accelerator.bd}}
+file delete -force {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/axis_dma_fir4_stream_accelerator}
+file delete -force {d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.gen/sources_1/bd/axis_dma_fir4_stream_accelerator}
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.gen/sources_1/bd/fir4/hdl/fir4_wrapper.v}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fir4_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}]
+set_property synth_checkpoint_mode None [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}}] -directory {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/kr260_experiments/08_axis_dma_configurable_stream_add_core/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_project
+open_project {D:/FPGA/Vivaldo Project/kr260_experiments/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.xpr}
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/10_axis_dma_fir4_stream_accelerator/10_axis_dma_fir4_stream_accelerator.srcs/sources_1/bd/fir4/fir4.bd}
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+update_module_reference fir4_axis_fir4_fixed_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_module_reference fir4_axis_fir4_fixed_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_project
+create_project 11_axis_dma_configurable_fir4_coefficients {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients} -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
+create_bd_design "dma_confi_fir4_coe"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property location {2.5 1298 -153} [get_bd_cells proc_sys_reset_0]
+set_property -dict [list \
+  CONFIG.PSU__USE__M_AXI_GP0 {1} \
+  CONFIG.PSU__USE__M_AXI_GP2 {0} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+startgroup
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property location {2.5 1569 -19} [get_bd_cells smartconnect_0]
+connect_bd_net [get_bd_pins smartconnect_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins smartconnect_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD] [get_bd_intf_pins smartconnect_0/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property location {3.5 1892 -29} [get_bd_cells axi_bram_ctrl_0]
+set_property CONFIG.SINGLE_PORT_BRAM {1} [get_bd_cells axi_bram_ctrl_0]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins smartconnect_0/M00_AXI]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {5.5 2442 -33} [get_bd_cells blk_mem_gen_0]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property CONFIG.c_include_sg {0} [get_bd_cells axi_dma_0]
+set_property location {5 2294 141} [get_bd_cells axi_dma_0]
+connect_bd_net [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_mm2s_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+set_property CONFIG.NUM_SI {3} [get_bd_cells smartconnect_0]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {3} \
+  CONFIG.NUM_SI {2} \
+] [get_bd_cells smartconnect_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/S_AXI_LITE] [get_bd_intf_pins smartconnect_0/M01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_0/S01_AXI]
+startgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {4} \
+  CONFIG.NUM_SI {2} \
+] [get_bd_cells smartconnect_0]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {3} \
+  CONFIG.NUM_SI {3} \
+] [get_bd_cells smartconnect_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S02_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {6 2552 92} [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins smartconnect_0/M02_AXI]
+startgroup
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_GPIO2_WIDTH {2} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axi_gpio_0]
+endgroup
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new/axis_fir4_configurable.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/new/axis_fir4_configurable.v}}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}
+startgroup
+set_property CONFIG.C_GPIO2_WIDTH {1} [get_bd_cells axi_gpio_0]
+endgroup
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}
+create_bd_cell -type module -reference axis_fir4_configurable axis_fir4_configurab_0
+connect_bd_net [get_bd_pins axis_fir4_configurab_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axis_fir4_configurab_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axis_fir4_configurab_0/ctr] [get_bd_pins axi_gpio_0/gpio2_io_o]
+connect_bd_net [get_bd_pins axis_fir4_configurab_0/coeff_pack] [get_bd_pins axi_gpio_0/gpio_io_o]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins axis_fir4_configurab_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins axis_fir4_configurab_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+save_bd_design
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+set_property offset 0x00A0020000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] -force
+set_property offset 0x00A0040000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_dma_0_Reg}]
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+set_property offset 0x00A0060000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_Reg}]
+assign_bd_address -target_address_space /axi_dma_0/Data_MM2S [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+assign_bd_address -target_address_space /axi_dma_0/Data_S2MM [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}
+assign_bd_address
+validate_bd_design
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.gen/sources_1/bd/dma_confi_fir4_coe/hdl/dma_confi_fir4_coe_wrapper.v}}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}}]
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}}] -sync -no_script -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/11_axis_dma_configurable_fir4_coefficients/11_axis_dma_configurable_fir4_coefficients.srcs/sources_1/bd/dma_confi_fir4_coe/dma_confi_fir4_coe.bd}
+validate_bd_design -force
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
