@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 21 21:40:36 2026
+# Process ID: 102216
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34160 D:\FPGA\Vivaldo Project\kr260_experiments\12_axis_dma_complex_mixer_nco\12_axis_dma_complex_mixer_nco.xpr
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}
+validate_bd_design -force
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+set_property CONFIG.PSU__USE__M_AXI_GP1 {0} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run mixer_nco_axi_bram_ctrl_0_0_synth_1
+reset_run mixer_nco_axis_complex_mixer_f_0_0_synth_1
+reset_run mixer_nco_blk_mem_gen_0_0_synth_1
+reset_run mixer_nco_axi_dma_0_0_synth_1
+reset_run mixer_nco_smartconnect_0_0_synth_1
+reset_run mixer_nco_zynq_ultra_ps_e_0_0_synth_1
+reset_run mixer_nco_proc_sys_reset_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+validate_bd_design -force
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+set_property synth_checkpoint_mode None [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -directory {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_module_reference mixer_nco_axis_complex_mixer_f_0_0
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.srcs/sources_1/bd/mixer_nco/mixer_nco.bd}}] -directory {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/kr260_experiments/12_axis_dma_complex_mixer_nco/12_axis_dma_complex_mixer_nco.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_module_reference mixer_nco_axis_complex_mixer_f_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
