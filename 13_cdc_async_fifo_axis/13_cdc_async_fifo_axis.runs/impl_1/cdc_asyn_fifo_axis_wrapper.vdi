@@ -1,0 +1,846 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 18 12:06:16 2026
+# Process ID: 72668
+# Current directory: D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1
+# Command line: vivado.exe -log cdc_asyn_fifo_axis_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cdc_asyn_fifo_axis_wrapper.tcl -notrace
+# Log file: D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper.vdi
+# Journal file: D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source cdc_asyn_fifo_axis_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top cdc_asyn_fifo_axis_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.652 . Memory (MB): peak = 1488.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_zynq_ultra_ps_e_0_0/cdc_asyn_fifo_axis_zynq_ultra_ps_e_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_zynq_ultra_ps_e_0_0/cdc_asyn_fifo_axis_zynq_ultra_ps_e_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_0_0/cdc_asyn_fifo_axis_proc_sys_reset_0_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_0_0/cdc_asyn_fifo_axis_proc_sys_reset_0_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_0_0/cdc_asyn_fifo_axis_proc_sys_reset_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_0_0/cdc_asyn_fifo_axis_proc_sys_reset_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_smartconnect_0_0/bd_0/ip/ip_1/bd_89f8_psr_aclk_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_smartconnect_0_0/bd_0/ip/ip_1/bd_89f8_psr_aclk_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_smartconnect_0_0/bd_0/ip/ip_1/bd_89f8_psr_aclk_0.xdc] for cell 'cdc_asyn_fifo_axis_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_smartconnect_0_0/bd_0/ip/ip_1/bd_89f8_psr_aclk_0.xdc] for cell 'cdc_asyn_fifo_axis_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/axi_dma_0/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/clk_wiz_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_clk_wiz_0_0/cdc_asyn_fifo_axis_clk_wiz_0_0.xdc] for cell 'cdc_asyn_fifo_axis_i/clk_wiz_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_1_0/cdc_asyn_fifo_axis_proc_sys_reset_1_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_1_0/cdc_asyn_fifo_axis_proc_sys_reset_1_0_board.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_1/U0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_1_0/cdc_asyn_fifo_axis_proc_sys_reset_1_0.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_proc_sys_reset_1_0/cdc_asyn_fifo_axis_proc_sys_reset_1_0.xdc] for cell 'cdc_asyn_fifo_axis_i/proc_sys_reset_1/U0'
+Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'zynq_ultra_ps_e_0_pl_clk0'. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+WARNING: [Vivado 12-627] No clocks matched 'clk_wiz_0_clk_out1'. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks zynq_ultra_ps_e_0_pl_clk0]'. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_wiz_0_clk_out1]'. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc:1]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.srcs/constrs_1/new/cdc.xdc]
+Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0_clocks.xdc] for cell 'cdc_asyn_fifo_axis_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.gen/sources_1/bd/cdc_asyn_fifo_axis/ip/cdc_asyn_fifo_axis_axi_dma_0_0/cdc_asyn_fifo_axis_axi_dma_0_0_clocks.xdc] for cell 'cdc_asyn_fifo_axis_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 103 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2073.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 130 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 127 instances
+
+15 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2073.812 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 10cb80ec4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.812 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realign_cmd_cmplt_reg_i_1 into driver instance cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realigner_btt2[17]_i_2, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/sig_last_mmap_dbeat_reg_i_1__0 into driver instance cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/sig_next_calc_error_reg_i_3, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance cdc_asyn_fifo_axis_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance cdc_asyn_fifo_axis_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_exit_pipeline/m01_exit/inst/splitter_inst/gen_axi4lite.axilite_conv/s_axi_rlast_INST_0 into driver instance cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_exit_pipeline/m01_exit/inst/splitter_inst/gen_axi4lite.axilite_conv/s_axi_rlast_INST_0_i_1, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/w_payld_fifo/cmd_fifo/cmd_len_qq[7]_i_1__3 into driver instance cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/w_payld_fifo/cmd_fifo/gen_pipelined.state[2]_i_3__1, which resulted in an inversion of 6 pins
+INFO: [Opt 31-138] Pushed 80 inverter(s) to 979 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 184a836d7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 59 cells and removed 464 cells
+INFO: [Opt 31-1021] In phase Retarget, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 17f507b7e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 4 cells and removed 11 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: f4f5577f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 426 cells
+INFO: [Opt 31-1021] In phase Sweep, 102 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: f4f5577f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: f4f5577f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f4f5577f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2360.594 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              59  |             464  |                                             60  |
+|  Constant propagation         |               4  |              11  |                                             80  |
+|  Sweep                        |               0  |             426  |                                            102  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             60  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 2360.594 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d96c2cbb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2360.594 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 132 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 65 newly gated: 2 Total Ports: 264
+Ending PowerOpt Patch Enables Task | Checksum: 197d3f899
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.824 . Memory (MB): peak = 3160.250 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 197d3f899
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 3160.250 ; gain = 799.656
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 197d3f899
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3160.250 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3160.250 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: eb62d006
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 3160.250 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file cdc_asyn_fifo_axis_wrapper_drc_opted.rpt -pb cdc_asyn_fifo_axis_wrapper_drc_opted.pb -rpx cdc_asyn_fifo_axis_wrapper_drc_opted.rpx
+Command: report_drc -file cdc_asyn_fifo_axis_wrapper_drc_opted.rpt -pb cdc_asyn_fifo_axis_wrapper_drc_opted.pb -rpx cdc_asyn_fifo_axis_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c6dd3441
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 148299b4a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1d5e33318
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1d5e33318
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1d5e33318
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 230fb0caa
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1b2056a48
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 1b2aaf755
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 1b2aaf755
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1f3bd5005
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1b43fa6fc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1dd540d96
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:37 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 758 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 296 nets or LUTs. Breaked 0 LUT, combined 296 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            296  |                   296  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            296  |                   296  |           0  |           5  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1a2287dc7
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:40 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 17cc8522a
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 17cc8522a
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: fa934e8c
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:43 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: cbb8ec4f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:46 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: cf341126
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: fdff46c6
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: db6fedf8
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:49 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 3.3.3 Slice Area Swap | Checksum: db6fedf8
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:49 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: ff3aaec6
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:52 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 43d018b4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: f1310f3c
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: f1310f3c
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 198a45056
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.549 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1378f99be
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.637 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 17d0829be
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.869 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 198a45056
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:04 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.549. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 17a33a3ec
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:04 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:04 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 17a33a3ec
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:04 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1bc653643
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:07 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1bc653643
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:07 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1bc653643
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:08 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:08 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f594b5cf
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:08 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Ending Placer Task | Checksum: d3e39fdc
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:08 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file cdc_asyn_fifo_axis_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file cdc_asyn_fifo_axis_wrapper_utilization_placed.rpt -pb cdc_asyn_fifo_axis_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file cdc_asyn_fifo_axis_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.108 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+98 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 859a525d ConstDB: 0 ShapeSum: c17bb28 RouteDB: 42319257
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.862 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 3885f3f3 NumContArr: c989b0a3 Constraints: 66f8ce03 Timing: 0
+Phase 1 Build RT Design | Checksum: 169087299
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 169087299
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 169087299
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: ecfe892f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: f01613ee
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.609  | TNS=0.000  | WHS=-0.121 | THS=-128.468|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1a317b4b4
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 4033.047 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.609  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1c347054c
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 20002
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 17105
+  Number of Partially Routed Nets     = 2897
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1807e0ae2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1807e0ae2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 4033.047 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: 1f174fed9
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 4033.047 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3257
+ Number of Nodes with overlaps = 137
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.305  | TNS=0.000  | WHS=-0.048 | THS=-0.312 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20756de44
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:16 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 20d4a436c
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:16 . Memory (MB): peak = 4294.352 ; gain = 261.305
+Phase 4 Rip-up And Reroute | Checksum: 20d4a436c
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:16 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16a5a6c6e
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:19 . Memory (MB): peak = 4294.352 ; gain = 261.305
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.305  | TNS=0.000  | WHS=-0.048 | THS=-0.059 |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 1c1efa0b2
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:22 . Memory (MB): peak = 4294.352 ; gain = 261.305
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.305  | TNS=0.000  | WHS=-0.048 | THS=-0.059 |
+
+Phase 5.1 Delay CleanUp | Checksum: 14cff9bea
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:22 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 14cff9bea
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:22 . Memory (MB): peak = 4294.352 ; gain = 261.305
+Phase 5 Delay and Skew Optimization | Checksum: 14cff9bea
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:22 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 16ba6fa9b
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:24 . Memory (MB): peak = 4294.352 ; gain = 261.305
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.305  | TNS=0.000  | WHS=-0.048 | THS=-0.059 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 226194220
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:25 . Memory (MB): peak = 4294.352 ; gain = 261.305
+Phase 6 Post Hold Fix | Checksum: 213ed5e49
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:25 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.88169 %
+  Global Horizontal Routing Utilization  = 2.20303 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 23833e887
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:25 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 23833e887
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:25 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23833e887
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 23833e887
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Phase 11 Post Router Timing
+
+Phase 11.1 Update Timing
+Phase 11.1 Update Timing | Checksum: 1c3b1978f
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:30 . Memory (MB): peak = 4294.352 ; gain = 261.305
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.305  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 1c3b1978f
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:30 . Memory (MB): peak = 4294.352 ; gain = 261.305
+Time taken to check if laguna hold fix is required (in secs): 0
+Skip PhysOpt in Router because non-negative WNS value: 2.30503e-09 .
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:34 . Memory (MB): peak = 4294.352 ; gain = 261.305
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+116 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4294.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file cdc_asyn_fifo_axis_wrapper_drc_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_drc_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_drc_routed.rpx
+Command: report_drc -file cdc_asyn_fifo_axis_wrapper_drc_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_drc_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/FPGA/Vivaldo Project/kr260_experiments/13_cdc_async_fifo_axis/13_cdc_async_fifo_axis.runs/impl_1/cdc_asyn_fifo_axis_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file cdc_asyn_fifo_axis_wrapper_power_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_power_summary_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_power_routed.rpx
+Command: report_power -file cdc_asyn_fifo_axis_wrapper_power_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_power_summary_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+129 Infos, 6 Warnings, 5 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file cdc_asyn_fifo_axis_wrapper_route_status.rpt -pb cdc_asyn_fifo_axis_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file cdc_asyn_fifo_axis_wrapper_timing_summary_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_timing_summary_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file cdc_asyn_fifo_axis_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file cdc_asyn_fifo_axis_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file cdc_asyn_fifo_axis_wrapper_bus_skew_routed.rpt -pb cdc_asyn_fifo_axis_wrapper_bus_skew_routed.pb -rpx cdc_asyn_fifo_axis_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <cdc_asyn_fifo_axis_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cdc_asyn_fifo_axis_i/axis_data_fifo_1>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <cdc_asyn_fifo_axis_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cdc_asyn_fifo_axis_i/axis_data_fifo_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cdc_asyn_fifo_axis_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <cdc_asyn_fifo_axis_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force cdc_asyn_fifo_axis_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+WARNING: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (cdc_asyn_fifo_axis_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./cdc_asyn_fifo_axis_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 18 12:12:10 2026...

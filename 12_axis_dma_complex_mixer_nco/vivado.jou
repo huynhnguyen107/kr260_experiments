@@ -56,3 +56,167 @@ update_module_reference mixer_nco_axis_complex_mixer_f_0_0
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+close_project
+create_project duc {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc} -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
+create_bd_design "duc"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property -dict [list \
+  CONFIG.PSU__USE__M_AXI_GP0 {1} \
+  CONFIG.PSU__USE__M_AXI_GP2 {0} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {2 704 -173} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {2.5 1307 -295} [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+connect_bd_net [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property location {3.5 1590 -193} [get_bd_cells smartconnect_0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD] [get_bd_intf_pins smartconnect_0/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property location {3.5 1881 -172} [get_bd_cells axi_bram_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins smartconnect_0/M00_AXI]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins smartconnect_0/aclk]
+connect_bd_net [get_bd_pins smartconnect_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins smartconnect_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+startgroup
+set_property CONFIG.SINGLE_PORT_BRAM {1} [get_bd_cells axi_bram_ctrl_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {5.5 2274 -193} [get_bd_cells blk_mem_gen_0]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+delete_bd_objs [get_bd_cells blk_mem_gen_1]
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA]
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+set_property range 512K [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property CONFIG.c_include_sg {0} [get_bd_cells axi_dma_0]
+set_property location {4.5 1898 -42} [get_bd_cells axi_dma_0]
+set_property location {3 1539 -37} [get_bd_cells axi_dma_0]
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells smartconnect_0]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {3} \
+  CONFIG.NUM_SI {3} \
+] [get_bd_cells smartconnect_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/S01_AXI] [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S02_AXI]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M01_AXI] [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells smartconnect_0]
+endgroup
+connect_bd_net [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_mm2s_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+assign_bd_address -target_address_space /zynq_ultra_ps_e_0/Data [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] -force
+assign_bd_address -target_address_space /axi_dma_0/Data_MM2S [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+assign_bd_address -target_address_space /axi_dma_0/Data_S2MM [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
+exclude_bd_addr_seg [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] -target_address_space [get_bd_addr_spaces axi_dma_0/Data_MM2S]
+exclude_bd_addr_seg [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] -target_address_space [get_bd_addr_spaces axi_dma_0/Data_S2MM]
+open_bd_design {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new/axis_upsample.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new/axis_upsample.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new/halfband_fir.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/new/halfband_fir.v}}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}
+create_bd_cell -type module -reference axis_upsample axis_upsample_0
+create_bd_cell -type module -reference halfband_fir halfband_fir_0
+set_property location {3.5 1995 -31} [get_bd_cells halfband_fir_0]
+set_property location {4 1966 -105} [get_bd_cells axis_upsample_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins axis_upsample_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins axis_upsample_0/m_axis] [get_bd_intf_pins halfband_fir_0/s_axis]
+connect_bd_net [get_bd_pins axis_upsample_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axis_upsample_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins halfband_fir_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins halfband_fir_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+copy_bd_objs /  [get_bd_cells {axis_upsample_0}]
+connect_bd_intf_net [get_bd_intf_pins halfband_fir_0/m_axis] [get_bd_intf_pins axis_upsample_1/s_axis]
+copy_bd_objs /  [get_bd_cells {halfband_fir_0}]
+connect_bd_intf_net [get_bd_intf_pins axis_upsample_1/m_axis] [get_bd_intf_pins halfband_fir_1/s_axis]
+connect_bd_net [get_bd_pins halfband_fir_1/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins halfband_fir_1/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axis_upsample_1/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axis_upsample_1/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins halfband_fir_1/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property -dict [list \
+  CONFIG.ALL_PROBE_SAME_MU_CNT {1} \
+  CONFIG.C_MONITOR_TYPE {AXI} \
+  CONFIG.C_SLOT_0_AXI_PROTOCOL {AXI4S} \
+] [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_intf_net [get_bd_intf_pins ila_0/SLOT_0_AXIS] [get_bd_intf_pins axis_upsample_0/m_axis]
+startgroup
+set_property -dict [list \
+  CONFIG.C_DATA_DEPTH {2048} \
+  CONFIG.C_MONITOR_TYPE {AXI} \
+] [get_bd_cells ila_0]
+endgroup
+copy_bd_objs /  [get_bd_cells {halfband_fir_0}]
+undo
+copy_bd_objs /  [get_bd_cells {ila_0}]
+connect_bd_net [get_bd_pins ila_1/clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_intf_net [get_bd_intf_pins ila_1/SLOT_0_AXIS] [get_bd_intf_pins halfband_fir_0/m_axis]
+copy_bd_objs /  [get_bd_cells {ila_0}]
+connect_bd_net [get_bd_pins ila_2/clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_intf_net [get_bd_intf_pins ila_2/SLOT_0_AXIS] [get_bd_intf_pins halfband_fir_1/s_axis]
+copy_bd_objs /  [get_bd_cells {ila_0}]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins ila_3/clk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+set_property location {6 1379 564} [get_bd_cells ila_3]
+connect_bd_intf_net [get_bd_intf_pins ila_3/SLOT_0_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+save_bd_design
+startgroup
+endgroup
+validate_bd_design
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.gen/sources_1/bd/duc/hdl/duc_wrapper.v}}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}]
+open_bd_design {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}
+set_property synth_checkpoint_mode None [get_files  {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}}] -directory {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/FPGA/Vivaldo Project/Digital_Font_End_LTE/Downlink/DUC/duc/duc.srcs/sources_1/bd/duc/duc.bd}
