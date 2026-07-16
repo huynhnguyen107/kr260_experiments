@@ -1,0 +1,18 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target-path = "/";
+
+        __overlay__ {
+            dma-uio@a0080000 {
+                compatible = "generic-uio";
+                reg = <0x0 0xa0080000 0x0 0x00010000>;
+                interrupt-parent = <&gic>;
+                interrupts = <0 89 4>;
+                status = "okay";
+            };
+        };
+    };
+};

@@ -14,13 +14,13 @@
 #define BRAM_BASE_PHYS   0xA0000000
 #define BRAM_MAP_SIZE    0x00080000   // 512 KB
 
-// DMA physical base is declared in device tree UIO node.
-// This define is kept for checking/debug only.
+// DMA is mapped through /dev/uio0.
+// This define is kept for reference only.
+// Device tree UIO node should map this address.
 #define DMA_BASE_PHYS    0xA0080000
 #define DMA_MAP_SIZE     0x00010000   // 64 KB
 
-// Change this after checking /sys/class/uio/uio*/name
-#define UIO_DEV          "/dev/uio4"
+#define UIO_DEV          "/dev/uio0"
 
 // ============================================================
 // BRAM layout
@@ -72,7 +72,7 @@
     (*((volatile uint32_t *)((uint8_t *)(base) + (offset))))
 
 // ============================================================
-// Helper functions
+// Helpers
 // ============================================================
 
 static void print_dma_status(volatile uint32_t *dma_base, const char *msg)
@@ -150,43 +150,35 @@ static int wait_mm2s_done_poll(volatile uint32_t *dma_base)
     return -1;
 }
 
+// static int uio_enable_irq(int uio_fd)
+// {
+//     uint32_t enable = 1;
+//     ssize_t n = write(uio_fd, &enable, sizeof(enable));
+
+//     if (n != sizeof(enable)) {
+//         perror("write /dev/uio0 enable irq");
+//         return -1;
+//     }
+
+//     return 0;
+// }
+
 static int wait_uio_irq(int uio_fd)
 {
     uint32_t irq_count;
     ssize_t n;
 
     printf("Waiting for UIO interrupt...\n");
-    fflush(stdout);
-
+    //sleep until interrupt occurs. The kernel will wake this read when the UIO IRQ fires.
     n = read(uio_fd, &irq_count, sizeof(irq_count));
 
     if (n != sizeof(irq_count)) {
-        perror("read UIO");
+        perror("read /dev/uio0");
         return -1;
     }
 
     printf("UIO interrupt received, count = %u\n", irq_count);
     return 0;
-}
-
-// Some UIO drivers support write(1) to re-enable IRQ.
-// Some do not. If not supported, do not fail the one-shot test.
-static void uio_try_reenable_irq(int uio_fd)
-{
-    uint32_t enable = 1;
-    ssize_t n;
-
-    n = write(uio_fd, &enable, sizeof(enable));
-
-    if (n != sizeof(enable)) {
-        if (errno == ENOSYS) {
-            printf("UIO irqcontrol write not implemented, skipping re-enable.\n");
-        } else {
-            printf("UIO re-enable warning: %s\n", strerror(errno));
-        }
-    } else {
-        printf("UIO interrupt re-enabled.\n");
-    }
 }
 
 // ============================================================
@@ -206,9 +198,8 @@ int main(void)
 
     int ret = 0;
 
-    printf("KR260 AXI DMA UIO Register + Interrupt Test Started\n");
+    printf("KR260 AXI DMA UIO Interrupt Test Started\n");
     printf("UIO device   : %s\n", UIO_DEV);
-    printf("DMA base     : 0x%08X\n", DMA_BASE_PHYS);
     printf("Test samples : %d\n", TEST_SAMPLES);
     printf("Test bytes   : %d\n", TEST_BYTES);
 
@@ -264,32 +255,20 @@ int main(void)
     }
 
     // ------------------------------------------------------------
-    // Open UIO device for AXI DMA
+    // Open UIO and map DMA registers
     // ------------------------------------------------------------
 
     uio_fd = open(UIO_DEV, O_RDWR);
     if (uio_fd < 0) {
-        perror("open UIO failed");
-        printf("Check that %s is the DMA UIO device.\n", UIO_DEV);
-        printf("Run:\n");
-        printf("  for d in /sys/class/uio/uio*; do echo ==== $d ====; cat $d/name; cat $d/maps/map0/addr; done\n");
-
+        perror("open /dev/uio0 failed");
+        printf("Check:\n");
+        printf("  ls /dev/uio*\n");
+        printf("  sudo modprobe uio\n");
+        printf("  sudo modprobe uio_pdrv_genirq of_id=generic-uio\n");
         munmap((void *)bram, BRAM_MAP_SIZE);
         close(mem_fd);
         return -1;
     }
-
-    // ------------------------------------------------------------
-    // Map DMA registers through /dev/uioX
-    // ------------------------------------------------------------
-    //
-    // Important:
-    // mmap offset 0 maps UIO map0.
-    // map0 must be 0xA0080000 with size 0x10000.
-    // Check:
-    //   cat /sys/class/uio/uioX/maps/map0/addr
-    //   cat /sys/class/uio/uioX/maps/map0/size
-    // ------------------------------------------------------------
 
     dma = (volatile uint32_t *)mmap(NULL,
                                     DMA_MAP_SIZE,
@@ -306,10 +285,6 @@ int main(void)
         return -1;
     }
 
-    // ------------------------------------------------------------
-    // Create BRAM pointers
-    // ------------------------------------------------------------
-
     input_bram =
         (volatile uint32_t *)((uint8_t *)bram + INPUT_OFFSET);
 
@@ -317,13 +292,7 @@ int main(void)
         (volatile uint32_t *)((uint8_t *)bram + OUTPUT_OFFSET);
 
     // ------------------------------------------------------------
-    // Quick sanity check: DMA register should be readable
-    // ------------------------------------------------------------
-
-    print_dma_status(dma, "Initial DMA status through UIO mmap:");
-
-    // ------------------------------------------------------------
-    // Prepare input/output data
+    // Prepare input and output BRAM
     // ------------------------------------------------------------
 
     printf("Writing input data...\n");
@@ -339,7 +308,7 @@ int main(void)
     }
 
     // ------------------------------------------------------------
-    // Reset DMA
+    // Reset DMA and clear stale interrupt bits
     // ------------------------------------------------------------
 
     dma_reset(dma);
@@ -348,6 +317,15 @@ int main(void)
         ret = -1;
         goto cleanup;
     }
+
+    // Important:
+    // Enable UIO interrupt before starting DMA.
+    // The kernel disables UIO IRQ after an interrupt fires.
+    // write(1) arms/enables it.
+    // if (uio_enable_irq(uio_fd) != 0) {
+    //     ret = -1;
+    //     goto cleanup;
+    // }
 
     // ------------------------------------------------------------
     // Start DMA
@@ -369,8 +347,6 @@ int main(void)
     DMA_REG(dma, DMA_MM2S_SRC_ADDR_OFFSET) = DMA_SRC_ADDR;
     DMA_REG(dma, DMA_MM2S_LENGTH_OFFSET)   = TEST_BYTES;
 
-    print_dma_status(dma, "DMA status after starting DMA:");
-
     // ------------------------------------------------------------
     // Wait for S2MM interrupt through UIO
     // ------------------------------------------------------------
@@ -388,20 +364,23 @@ int main(void)
     }
 
     // ------------------------------------------------------------
-    // Ack S2MM DMA interrupt
+    // Ack DMA interrupt status
     // ------------------------------------------------------------
 
-    printf("Acknowledging S2MM DMA IRQ bits...\n");
+    printf("Acknowledging DMA IRQ status bits...\n");
 
     DMA_REG(dma, DMA_S2MM_STATUS_OFFSET) =
         DMA_STATUS_IOC_IRQ | DMA_STATUS_DLY_IRQ | DMA_STATUS_ERR_IRQ;
 
-    // Optional for repeated tests in same process.
-    // If kernel says Function not implemented, we just ignore.
-    uio_try_reenable_irq(uio_fd);
+    // Re-enable UIO only if running another transfer.
+    // For one-shot test this is optional, but harmless.
+    // if (uio_enable_irq(uio_fd) != 0) {
+    //     ret = -1;
+    //     goto cleanup;
+    // }
 
-    // MM2S interrupt is not connected to UIO in this test.
-    // Poll MM2S after S2MM done.
+    // MM2S is not connected to UIO interrupt in this test.
+    // Poll/check MM2S only after S2MM interrupt.
     if (wait_mm2s_done_poll(dma) != 0) {
         ret = -1;
         goto cleanup;
@@ -410,17 +389,13 @@ int main(void)
     print_dma_status(dma, "Final DMA status:");
 
     // ------------------------------------------------------------
-    // Print output samples
+    // Print and compare output
     // ------------------------------------------------------------
 
     printf("First 16 output samples:\n");
     for (uint32_t i = 0; i < 16; i++) {
         printf("Output sample %u: %08x\n", i, output_bram[i]);
     }
-
-    // ------------------------------------------------------------
-    // Compare output
-    // ------------------------------------------------------------
 
     printf("Comparing output with golden data...\n");
 
